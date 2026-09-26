@@ -1,5 +1,5 @@
-# Glossary
+# National cyber security centres
 
-Terms as defined by the specifications and by CRA Article 3.
+NCSC-UK, NCSC-NL and other national guidance.
 
 No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.

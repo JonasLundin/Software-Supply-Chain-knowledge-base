@@ -1,5 +1,9 @@
 # Law
 
-Primary legal instruments, article by article, with annexes, secondary legislation and interacting law.
+Legal instruments summarised for their supply-chain provisions, with pointers to the sibling bundles for the rest.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Structure
+
+- [EU law](eu/index.md): CRA and NIS2 supply-chain provisions (pointers to the CRA and NIS2 bundles).
+- [United States](united-states/index.md): Executive Order 14028 and implementing memoranda.
+- [Other](other/index.md): Other national instruments with SBOM or provenance duties.

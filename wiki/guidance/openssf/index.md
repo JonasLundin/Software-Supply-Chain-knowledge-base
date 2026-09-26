@@ -1,5 +1,5 @@
-# Glossary
+# OpenSSF
 
-Terms as defined by the specifications and by CRA Article 3.
+Guides, SLSA documentation, Scorecard documentation.
 
 No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.

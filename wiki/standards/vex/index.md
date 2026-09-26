@@ -1,5 +1,5 @@
-# Glossary
+# VEX
 
-Terms as defined by the specifications and by CRA Article 3.
+OpenVEX, CSAF VEX, CycloneDX VEX, status vocabulary, minimum requirements.
 
 No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.

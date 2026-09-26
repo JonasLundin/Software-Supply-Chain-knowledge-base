@@ -7,8 +7,23 @@ total_concepts: 0
 by_category: {}
 by_type: {}
 gates:
-  law_articles:
-    pattern: 'law/*/articles/article-*'
+  sbom_formats:
+    pattern: standards/sbom-formats/*
+    expected: null
+    actual: 0
+    status: pending
+  attestation_frameworks:
+    pattern: standards/attestation-and-provenance/*
+    expected: null
+    actual: 0
+    status: pending
+  vex_forms:
+    pattern: standards/vex/*
+    expected: null
+    actual: 0
+    status: pending
+  jurisdictions:
+    pattern: jurisdictions/*
     expected: null
     actual: 0
     status: pending

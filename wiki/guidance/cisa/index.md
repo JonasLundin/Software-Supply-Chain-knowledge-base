@@ -1,5 +1,5 @@
-# Glossary
+# CISA
 
-Terms as defined by the specifications and by CRA Article 3.
+SBOM guidance series, VEX documents, SBOM-a-rama outputs.
 
 No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.

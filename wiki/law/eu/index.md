@@ -1,5 +1,5 @@
-# Glossary
+# EU law
 
-Terms as defined by the specifications and by CRA Article 3.
+CRA and NIS2 supply-chain provisions (pointers to the CRA and NIS2 bundles).
 
 No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.

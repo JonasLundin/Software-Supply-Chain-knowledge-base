@@ -1,40 +1,53 @@
-# Bundle manifest read by tools/validate.py. Edit this first when creating a new knowledge base.
+# Bundle manifest read by tools/validate.py. Add a category or section here before using it in wiki/.
 manifest_version: 1
-okf_version: "0.2"
-slug: template
-name: Knowledge Base Template
-description: Template for regulatory and standards knowledge bases published as OKF bundles for Meerkat and MCP.
-extension_key: x-template
+okf_version: '0.2'
+slug: software-supply-chain
+name: Software Supply Chain Knowledge Base
+description: 'Software supply-chain integrity: SBOM formats, attestation and provenance frameworks, VEX, identifiers, secure
+  development frameworks, and the regulatory expectations that reference them.'
+extension_key: x-software-supply-chain
 categories:
-  - law
-  - requirement
-  - guidance
-  - standard
-  - role
-  - procedure
-  - authority
-  - jurisdiction
-  - timeline
-  - glossary
+- law
+- requirement
+- guidance
+- standard
+- role
+- procedure
+- authority
+- jurisdiction
+- timeline
+- glossary
+- format
 sections:
-  - path: law
-    title: Law
-    description: Primary legal instruments, article by article, with annexes, secondary legislation and interacting law.
-  - path: obligations
-    title: Obligations
-    description: Role and lifecycle views of what the instrument requires.
-  - path: standards
-    title: Standards
-    description: Standards and specifications referenced by the instrument, as identifiers, lifecycle facts and links.
-  - path: guidance
-    title: Guidance
-    description: Official non-binding guidance from the responsible institutions and authorities.
-  - path: jurisdictions
-    title: Jurisdictions
-    description: National authorities, implementing measures and status per jurisdiction.
-  - path: timeline
-    title: Timeline
-    description: Entry into force, application and transition milestones.
-  - path: glossary
-    title: Glossary
-    description: Terms defined by the instrument.
+- path: standards
+  title: Standards
+  description: Specifications and frameworks, recorded as identifiers, versions, scope, relationships and links.
+- path: requirements
+  title: Requirements
+  description: What regulators and public buyers expect of SBOMs, attestations and dependency due diligence.
+- path: procedures
+  title: Procedures
+  description: Generating SBOMs at build, depth and completeness, distribution and access control, signing and attestation,
+    verification, vulnerability matching, VEX exchange, reproducible builds, provenance verification, dependency due diligence,
+    upstream fix sharing.
+- path: roles
+  title: Roles
+  description: Producer, consumer, distributor, open-source steward, build platform, package registry, tool vendor.
+- path: law
+  title: Law
+  description: Legal instruments summarised for their supply-chain provisions, with pointers to the sibling bundles for the
+    rest.
+- path: guidance
+  title: Guidance
+  description: Official and community guidance.
+- path: jurisdictions
+  title: Jurisdictions
+  description: One page per jurisdiction with SBOM, attestation or provenance expectations, naming the instrument, the authority
+    and the date.
+- path: timeline
+  title: Timeline
+  description: Executive Order 14028, NTIA 2021, SPDX as ISO/IEC 5962, CycloneDX as ECMA-424, SLSA 1.0 and 1.2, SPDX 3.0,
+    CISA 2026 minimum elements, CRA dates.
+- path: glossary
+  title: Glossary
+  description: Terms as defined by the specifications and by CRA Article 3.
