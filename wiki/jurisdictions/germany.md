@@ -1,48 +1,42 @@
 ---
 type: Jurisdiction
-title: 'Jurisdiction: Germany (BSI)'
-description: German Federal Office for Information Security (BSI) technical standards
-  and procurement guidelines for cyber resilience and SBOMs.
+title: Germany Software Supply Chain Framework
+description: National cybersecurity requirements and BSI Technical Guidelines for
+  software bills of materials and resilience.
 category: jurisdiction
 tags:
-- supply-chain
 - jurisdiction
 - germany
 - bsi
-- tr-03183
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: ntia-sbom-elements
-  resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
-  title: The Minimum Elements For a Software Bill of Materials (SBOM)
-  author: National Telecommunications and Information Administration (NTIA)
-  last_modified: '2021-07-12T00:00:00Z'
+- id: bsi-tr-03183
+  resource: https://www.bsi.bund.de/EN/Themes/Cyber-Security/TR/TR-03183/TR-03183_node.html
+  title: 'BSI Technical Guideline TR-03183: Cyber Resilience Requirements'
+  author: Federal Office for Information Security (BSI)
+  last_modified: '2024-05-15T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: Germany (BSI)
-  authority_level: guidance
+  jurisdiction: DE
+  authority_level: rule
   instrument_status: in_force
-  provision: BSI TR-03183
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-**Germany**, through the Federal Office for Information Security (**BSI** - *Bundesamt für Sicherheit in der Informationstechnik*), provides authoritative national technical guidelines aligning domestic procurement with European regulations[^ntia-sbom-elements].
+In **Germany**, the Federal Office for Information Security (BSI) sets national technical standards for software supply chain security through Technical Guideline TR-03183[^bsi-tr-03183].
 
-# Technical Guideline BSI TR-03183
-
-The landmark **BSI TR-03183** (*Cyber Resilience Requirements for Manufacturers and Products*) serves as the national technical operationalization for software supply chain transparency:
-- **Part 1 - SBOM Requirements**: Specifies concrete requirements for machine-readable SBOM formats (CycloneDX and SPDX), requiring inclusion of package hashes, direct and transitive dependencies, and purl identifiers.
-- **Part 2 - Vulnerability Handling & VEX**: Prescribes automated vulnerability status communication via CSAF 2.0 VEX profiles.
-- **Government Procurement Integration**: Public tenders across German federal and state administrations reference TR-03183 as a mandatory technical compliance baseline.
+# Regulatory Structure
+- **BSI TR-03183 Part 1**: General security requirements across development lifecycles.
+- **BSI TR-03183 Part 2 (Version 2.1.0)**: Detailed specifications for software bill of materials (SBOM) structure, content, and verification.
+- **BSI TR-03183 Part 3**: Automated vulnerability reports and notification protocols.
 
 # Related concepts
-- [European Union](european-union.md)
-- [CycloneDX 1.6](../standards/sbom-formats/cyclonedx-1-6.md)
-- [CSAF 2.0 VEX Profile](../standards/vex/csaf-vex.md)
+- [BSI TR-03183 Requirements](../requirements/germany/bsi-tr-03183.md)
+- [BSI SBOM Guidelines](../guidance/bsi/bsi-sbom-guidelines.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^bsi-tr-03183]: Federal Office for Information Security (BSI), BSI Technical Guideline TR-03183: Cyber Resilience Requirements, https://www.bsi.bund.de/EN/Themes/Cyber-Security/TR/TR-03183/TR-03183_node.html

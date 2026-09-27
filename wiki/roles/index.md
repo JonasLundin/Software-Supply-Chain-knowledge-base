@@ -1,11 +1,13 @@
-# Roles
+# Supply Chain Roles
 
-Producer, consumer, distributor, open-source steward, build platform, package registry, tool vendor.
+Economic and operational participants in software creation, packaging, and consumption.
 
 ## Concepts
 
-- [Role: Build Platform / CI Provider](build-platform.md) — Infrastructure or hosted service executing software compilation, packaging, and issuing provenance attestations.
-- [Role: Open-Source Software Steward](open-source-steward.md) — Legal person or foundation providing sustained support, infrastructure, and governance for open-source digital products.
-- [Role: Package Registry](package-registry.md) — Central repository hosting, indexing, and serving software packages, containers, signatures, and provenance tokens.
-- [Role: Software Consumer / Deployer](software-consumer.md) — Enterprise, public administration, or downstream organization acquiring, evaluating, and operating software products.
-- [Role: Software Producer](software-producer.md) — Primary entity designing, compiling, assembling, and distributing commercial or proprietary software products.
+- [Software Producer](software-producer.md): Manufacturer or development organization producing software.
+- [Software Consumer](software-consumer.md): Enterprise or asset owner deploying software into operations.
+- [Software Distributor](distributor.md): Economic operator distributing software products.
+- [Open-Source Software Steward](open-source-steward.md): Entity providing sustained support to open source projects.
+- [Build Platform](build-platform.md): Automated CI/CD execution environment.
+- [Package Registry](package-registry.md): Repository indexing and distributing packages and artifacts.
+- [Security and Tool Vendor](tool-vendor.md): Provider of developer toolchains and security solutions.

@@ -1,6 +1,6 @@
 ---
 type: Role
-title: 'Role: Open-Source Software Steward'
+title: "Role: Open-Source Software Steward"
 description: Legal person or foundation providing sustained support, infrastructure,
   and governance for open-source digital products.
 category: role

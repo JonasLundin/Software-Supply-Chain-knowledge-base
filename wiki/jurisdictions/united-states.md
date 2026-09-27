@@ -1,53 +1,49 @@
 ---
 type: Jurisdiction
-title: 'Jurisdiction: United States'
-description: United States federal framework driving SBOM adoption, secure software
-  development attestation, and federal procurement standards.
+title: United States Software Supply Chain Framework
+description: Federal framework established by Executive Order 14028, OMB memoranda,
+  and CISA minimum elements.
 category: jurisdiction
 tags:
-- supply-chain
 - jurisdiction
 - us
 - eo-14028
 - cisa
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: ntia-sbom-elements
-  resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
-  title: The Minimum Elements For a Software Bill of Materials (SBOM)
-  author: National Telecommunications and Information Administration (NTIA)
-  last_modified: '2021-07-12T00:00:00Z'
+- id: us-eo-14028
+  resource: https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity
+  title: 'Executive Order 14028: Improving the Nation''s Cybersecurity'
+  author: Executive Office of the President of the United States
+  last_modified: '2025-06-06T00:00:00Z'
+- id: cisa-minimum-elements-2026
+  resource: https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom
+  title: 2026 Minimum Elements for a Software Bill of Materials (SBOM)
+  author: Cybersecurity and Infrastructure Security Agency (CISA)
+  last_modified: '2026-07-29T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: United States
-  authority_level: guidance
+  jurisdiction: US
+  authority_level: statutory
   instrument_status: in_force
-  provision: Executive Order 14028, OMB M-22-18 / M-23-16
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-The **United States** has pioneered global supply-chain cybersecurity policy through presidential directives, federal procurement regulations, and authoritative technical guidance issued by CISA, NIST, and NTIA[^ntia-sbom-elements].
+In the **United States**, software supply chain security is driven by presidential directives and federal procurement mandates, centered on Executive Order 14028[^us-eo-14028] and CISA guidelines[^cisa-minimum-elements-2026].
 
-# Key Policy Instruments
-
-### 1. Executive Order 14028 (May 2021)
-President Biden's Executive Order 14028 on *Improving the Nation's Cybersecurity* established the modern concept of Software Bills of Materials (SBOM) and directed the Department of Commerce (NTIA) to publish the baseline definition of minimum elements.
-
-### 2. OMB Memoranda M-22-18 & M-23-16
-Mandated that federal agencies may only use software developed in accordance with the NIST Secure Software Development Framework (SP 800-218).
-
-### 3. CISA Common Self-Attestation Form
-Enforces mandatory self-attestation for all software producers selling to federal departments, requiring executive certification of build environment security, vulnerability disclosure programs, and third-party dependency tracking.
+# Core Governance Mechanisms
+- **Executive Order 14028**: Mandates NIST secure development guidelines and federal agency software supply chain verification.
+- **OMB M-22-18 / M-23-16**: Mandates software producers submit CISA self-attestation forms confirming adherence to NIST SP 800-218.
+- **CISA 2026 Minimum Elements**: Establishes modern technical elements required in SBOMs for federal use.
 
 # Related concepts
-- [NTIA Minimum Elements for an SBOM](../requirements/united-states/ntia-minimum-elements.md)
-- [CISA Secure Software Development Attestation](../requirements/united-states/cisa-self-attestation.md)
-- [NIST Secure Software Development Framework (SSDF)](../requirements/united-states/ssdf-nist-sp-800-218.md)
-- [CISA SBOM Sharing and Distribution Guidance](../guidance/cisa/cisa-sbom-sharing-guidance.md)
+- [Executive Order 14028](../law/united-states/eo-14028.md)
+- [CISA 2026 Minimum Elements](../requirements/united-states/cisa-minimum-elements-2026.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^us-eo-14028]: Executive Office of the President of the United States, Executive Order 14028: Improving the Nation's Cybersecurity, https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity
+[^cisa-minimum-elements-2026]: Cybersecurity and Infrastructure Security Agency (CISA), 2026 Minimum Elements for a Software Bill of Materials (SBOM), https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom

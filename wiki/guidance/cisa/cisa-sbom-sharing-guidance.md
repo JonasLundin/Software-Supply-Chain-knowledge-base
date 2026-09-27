@@ -1,73 +1,46 @@
 ---
 type: Guidance
-title: 'CISA Guidance: SBOM Sharing, Distribution, and Access Control'
-description: Official CISA framework defining operational workflows and access controls
-  for distributing machine-readable SBOMs.
+title: CISA Software Bill of Materials Sharing Considerations
+description: Federal guidance outlining operational models, transport mechanisms,
+  and access control strategies for SBOM exchange.
 category: guidance
 tags:
-- supply-chain
 - guidance
 - cisa
-- sbom-sharing
-- distribution
+- sbom
+- sharing
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: ntia-sbom-elements
-  resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
-  title: The Minimum Elements For a Software Bill of Materials (SBOM)
-  author: National Telecommunications and Information Administration (NTIA)
-  last_modified: '2021-07-12T00:00:00Z'
+- id: cisa-sbom-sharing
+  resource: https://www.cisa.gov/resources-tools/resources/software-bill-materials-sharing-considerations
+  title: Software Bill of Materials Sharing Considerations
+  author: Cybersecurity and Infrastructure Security Agency (CISA)
+  last_modified: '2023-04-01T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: International
+  jurisdiction: US
   authority_level: guidance
   instrument_status: in_force
-  provision: CISA SBOM Community Guidance (2023)
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-The **CISA Guidance on SBOM Sharing, Distribution, and Access Control** provides authoritative operational recommendations for software producers, buyers, and consumers on how to securely distribute, exchange, and control access to Software Bills of Materials[^ntia-sbom-elements].
+Published by CISA's SBOM Community Workgroup, **Software Bill of Materials Sharing Considerations** explores the practical mechanisms software producers and consumers can use to exchange SBOMs securely[^cisa-sbom-sharing].
 
-# The Four SBOM Distribution Architecture Models
+> [!NOTE]
+> **Advisory Guidance**: This document offers operational frameworks for software exchange and does not impose regulatory mandates.
 
-```
-+-------------------------------------------------------------------+
-|               CISA SBOM SHARING ARCHITECTURE MODELS               |
-+-------------------------------------------------------------------+
-| 1. POINT-TO-POINT DIRECT DELIVERY                                 |
-|    - Bundled directly inside package / container archive          |
-|    - Shipped alongside binary during customer release             |
-+-------------------------------------------------------------------+
-| 2. DISCOVERABLE REPOSITORIES & REGISTRIES                         |
-|    - Attached as an OCI artifact using Sigstore / Cosign          |
-|    - Stored adjacent to container image in registry               |
-+-------------------------------------------------------------------+
-| 3. ADVERTISE-AND-RETRIEVE WEB ENDPOINTS                           |
-|    - Hosted on vendor customer portal with authenticated API      |
-|    - Advertised via RFC 9116 / security.txt or RFC 9264 links    |
-+-------------------------------------------------------------------+
-| 4. CENTRALIZED BROKER & EXCHANGE PLATFORMS                        |
-|    - Third-party SaaS trust platforms managing enterprise access  |
-|    - Non-disclosure agreement (NDA) enforcement & versioning      |
-+-------------------------------------------------------------------+
-```
-
-# Access Control & Confidentiality Considerations
-
-Software producers often express concern that public SBOMs expose proprietary intellectual property or assist attackers in discovering unpatched components. CISA recommends:
-- **Tiered Access Controls**: Providing public summaries of top-level open source licenses while reserving full transitive dependency trees for authenticated commercial licensees.
-- **Contractual Non-Disclosure**: Utilizing standard commercial licensing terms to restrict downstream re-distribution of detailed architecture SBOMs.
-- **Companion VEX Publishing**: Always pairing SBOM distribution with authoritative Vulnerability Exploitability eXchange (VEX) feeds to prevent consumers from misinterpreting unreachable vulnerabilities as active risks.
+# Key Sharing Mechanisms
+- **In-Band Discovery**: Placing SBOM files directly inside software packages, container images, or well-known URI endpoints (`/.well-known/sbom`).
+- **Out-of-Band Portals**: Operating authenticated customer repositories for commercial software products.
+- **Access Control & IP Protection**: Addressing intellectual property and sensitive architecture concerns through role-based access controls and nondisclosure agreements.
 
 # Related concepts
-- [NTIA Minimum Elements for an SBOM](../../requirements/united-states/../../requirements/united-states/ntia-minimum-elements.md)
-- [CSAF 2.0 VEX Profile](../../standards/vex/csaf-vex.md)
-- [Software Producer Role](../../roles/software-producer.md)
-- [Software Consumer Role](../../roles/software-consumer.md)
+- [CISA 2026 Minimum Elements](../../requirements/united-states/cisa-minimum-elements-2026.md)
+- [SBOM Distribution and Access Control](../../procedures/sbom-distribution-and-access-control.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^cisa-sbom-sharing]: Cybersecurity and Infrastructure Security Agency (CISA), Software Bill of Materials Sharing Considerations, https://www.cisa.gov/resources-tools/resources/software-bill-materials-sharing-considerations

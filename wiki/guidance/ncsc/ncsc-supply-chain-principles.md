@@ -1,28 +1,27 @@
 ---
-type: Concept
-title: NCSC Principles for Supply Chain Security
-description: UK National Cyber Security Centre 12 principles for managing supply chain
-  cybersecurity risks.
+type: Guidance
+title: NCSC Supply Chain Security Principles
+description: Twelve core principles from the UK National Cyber Security Centre for
+  managing supply chain cybersecurity risks.
 category: guidance
 tags:
-- software-supply-chain
 - guidance
+- uk
 - ncsc
-- supply-chain-principles
+- supply-chain
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: regulation-eu-2024-2847
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
-  author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+- id: ncsc-supply-chain-principles
+  resource: https://www.ncsc.gov/collection/supply-chain-security
+  title: Supply Chain Security Guidance
+  author: National Cyber Security Centre (NCSC)
+  last_modified: '2023-01-26T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: International
+  jurisdiction: GB
   authority_level: guidance
   instrument_status: in_force
   checked_at: '2026-09-27T00:00:00Z'
@@ -30,10 +29,19 @@ x-software-supply-chain:
 
 # Summary
 
-The UK **National Cyber Security Centre (NCSC)** defines 12 core principles for assessing, managing, and governing supply chain risk across enterprise architectures[^regulation-eu-2024-2847].
+Published by the UK National Cyber Security Centre (NCSC), the **Supply Chain Security Guidance** establishes twelve fundamental principles structured across four stages[^ncsc-supply-chain-principles].
+
+> [!NOTE]
+> **Advisory Guidance**: This guidance provides voluntary recommendations for public sector procurement and commercial organizations.
+
+# Four Operational Stages
+1. **Understand the Risk**: Determine what needs protecting and identify critical dependencies across the organization's supply network.
+2. **Establish Control**: Communicate minimum security requirements to suppliers and integrate security criteria into procurement decisions.
+3. **Check Arrangements**: Verify supplier adherence to security controls and ensure continuous incident reporting capabilities.
+4. **Continuous Improvement**: Build resilience through joint incident response exercises and ongoing vulnerability remediation.
 
 # Related concepts
-- [NCSC Guidance Index](index.md)
-- [Dependency Due Diligence](../../procedures/dependency-due-diligence.md)
+- [UK Software Security Code of Practice](uk-software-security-code-of-practice.md)
+- [Jurisdiction United Kingdom](../../jurisdictions/united-kingdom.md)
 
-[^regulation-eu-2024-2847]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^ncsc-supply-chain-principles]: National Cyber Security Centre (NCSC), Supply Chain Security Guidance, https://www.ncsc.gov/collection/supply-chain-security

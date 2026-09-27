@@ -1,81 +1,388 @@
 version: 1
-checked_at: '2026-09-27T00:00:00Z'
-total_sources: 5
+total_sources: 42
 sources:
-  spdx-iso-5962:
-    id: spdx-iso-5962
-    resource: https://spdx.dev/specifications/
-    title: Software Package Data Exchange (SPDX) Specification (ISO/IEC 5962:2021)
-    author: Linux Foundation / ISO/IEC JTC 1
-    last_modified: '2021-09-01T00:00:00Z'
+  eu-cra-regulation:
+    id: eu-cra-regulation
+    title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for
+      products with digital elements (Cyber Resilience Act)
+    author: European Parliament and Council of the European Union
+    resource: http://data.europa.eu/eli/reg/2024/2847/oj
+    last_modified: '2024-11-20T00:00:00Z'
     used_by:
-    - glossary/package-url
-    - standards/sbom-formats/spdx-2-3
-    - standards/sbom-formats/spdx-3-0
-    - timeline/spdx-iso-adoption
-  cyclonedx-specification:
-    id: cyclonedx-specification
-    resource: https://cyclonedx.org/specification/overview/
-    title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
-    author: OWASP Foundation / Ecma International
-    last_modified: '2024-05-01T00:00:00Z'
-    used_by:
-    - procedures/sbom-generation-at-build
-    - procedures/vulnerability-matching-and-vex
-    - standards/sbom-formats/cyclonedx-1-5
-    - standards/sbom-formats/cyclonedx-1-6
-    - standards/vex/cyclonedx-vex
+    - glossary/component
+    - glossary/open-source-software-steward
+    - glossary/product-with-digital-elements
+    - glossary/vulnerability
+    - jurisdictions/european-union
+    - law/eu/cra-supply-chain
+    - procedures/dependency-due-diligence
+    - procedures/upstream-fix-sharing
+    - requirements/european-union/cra-sbom-mandate
+    - roles/distributor
+    - roles/open-source-steward
+    - roles/software-consumer
+    - roles/software-producer
+    - timeline/cra-application-2027
   slsa-framework:
     id: slsa-framework
-    resource: https://slsa.dev/spec/v1.0/
     title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
     author: OpenSSF SLSA Working Group
+    resource: https://slsa.dev/spec/v1.0/
     last_modified: '2023-04-18T00:00:00Z'
     used_by:
     - glossary/provenance
     - procedures/reproducible-builds
     - procedures/sbom-verification-and-signing
     - roles/build-platform
-    - roles/package-registry
-    - standards/attestation-and-provenance/in-toto
-    - standards/attestation-and-provenance/sigstore
-    - standards/attestation-and-provenance/slsa-1-0
-    - standards/attestation-and-provenance/slsa-1-2
   ntia-sbom-elements:
     id: ntia-sbom-elements
-    resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
     title: The Minimum Elements For a Software Bill of Materials (SBOM)
     author: National Telecommunications and Information Administration (NTIA)
+    resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
     last_modified: '2021-07-12T00:00:00Z'
     used_by:
     - glossary/software-bill-of-materials
     - glossary/vex
-    - guidance/cisa/cisa-sbom-sharing-guidance
-    - jurisdictions/germany
-    - jurisdictions/japan
-    - jurisdictions/united-kingdom
-    - jurisdictions/united-states
-    - requirements/united-states/cisa-self-attestation
+    - procedures/vulnerability-matching-and-vex
     - requirements/united-states/ntia-minimum-elements
-    - requirements/united-states/ssdf-nist-sp-800-218
     - roles/software-consumer
-    - standards/vex/csaf-vex
-    - standards/vex/openvex
+    - roles/software-producer
     - timeline/eo-14028-signing
     - timeline/ntia-minimum-elements-publication
-  eu-cra-regulation:
-    id: eu-cra-regulation
-    resource: http://data.europa.eu/eli/reg/2024/2847/oj
-    title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for
-      products with digital elements (Cyber Resilience Act)
+  bsi-tr-03183:
+    id: bsi-tr-03183
+    title: 'BSI Technical Guideline TR-03183: Cyber Resilience Requirements'
+    author: Federal Office for Information Security (BSI)
+    resource: https://www.bsi.bund.de/EN/Themes/Cyber-Security/TR/TR-03183/TR-03183_node.html
+    last_modified: '2024-05-15T00:00:00Z'
+    used_by:
+    - guidance/bsi/bsi-sbom-guidelines
+    - jurisdictions/germany
+    - requirements/germany/bsi-tr-03183
+  cisa-sbom-sharing:
+    id: cisa-sbom-sharing
+    title: Software Bill of Materials Sharing Considerations
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    resource: https://www.cisa.gov/resources-tools/resources/software-bill-materials-sharing-considerations
+    last_modified: '2023-04-01T00:00:00Z'
+    used_by:
+    - guidance/cisa/cisa-sbom-sharing-guidance
+    - procedures/sbom-distribution-and-access-control
+  enisa-supply-chain-report:
+    id: enisa-supply-chain-report
+    title: ENISA Threat Landscape for Supply Chain Attacks
+    author: European Union Agency for Cybersecurity (ENISA)
+    resource: https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks
+    last_modified: '2021-07-29T00:00:00Z'
+    used_by:
+    - guidance/enisa/enisa-supply-chain-guidance
+  ncsc-supply-chain-principles:
+    id: ncsc-supply-chain-principles
+    title: Supply Chain Security Guidance
+    author: National Cyber Security Centre (NCSC)
+    resource: https://www.ncsc.gov/collection/supply-chain-security
+    last_modified: '2023-01-26T00:00:00Z'
+    used_by:
+    - guidance/ncsc/ncsc-supply-chain-principles
+  uk-software-security-code-of-practice:
+    id: uk-software-security-code-of-practice
+    title: Software Security Code of Practice
+    author: Department for Science, Innovation and Technology (DSIT) and NCSC
+    resource: https://www.gov.uk/government/publications/software-security-code-of-practice
+    last_modified: '2025-05-07T00:00:00Z'
+    used_by:
+    - guidance/ncsc/uk-software-security-code-of-practice
+    - jurisdictions/united-kingdom
+  ntia-sbom-faq:
+    id: ntia-sbom-faq
+    title: Software Bill of Materials (SBOM) Frequently Asked Questions
+    author: National Telecommunications and Information Administration (NTIA)
+    resource: https://www.ntia.gov/files/ntia/publications/sbom_faq_20210712.pdf
+    last_modified: '2021-07-12T00:00:00Z'
+    used_by:
+    - guidance/ntia/ntia-sbom-faq
+  openssf-best-practices:
+    id: openssf-best-practices
+    title: OpenSSF Best Practices Badge Program
+    author: Open Source Security Foundation (OpenSSF)
+    resource: https://bestpractices.coreinfrastructure.org/
+    last_modified: '2023-11-01T00:00:00Z'
+    used_by:
+    - guidance/openssf/scorecard-and-best-practices
+  eu-nis2-directive:
+    id: eu-nis2-directive
+    title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+      across the Union (NIS2)
     author: European Parliament and Council of the European Union
-    last_modified: '2024-11-20T00:00:00Z'
+    resource: http://data.europa.eu/eli/dir/2022/2555/oj
+    last_modified: '2022-12-14T00:00:00Z'
     used_by:
     - jurisdictions/european-union
-    - law/eu/cra-supply-chain
     - law/eu/nis2-article-21-supply-chain
-    - procedures/dependency-due-diligence
-    - requirements/european-union/cra-sbom-mandate
-    - roles/open-source-steward
-    - roles/software-producer
-    - timeline/cra-application-2027
+  meti-japan-sbom-guide:
+    id: meti-japan-sbom-guide
+    title: 'METI: Guidelines for the Use of Software Bill of Materials (SBOM) for
+      Cybersecurity Management'
+    author: Ministry of Economy, Trade and Industry (METI)
+    resource: https://www.meti.go.jp/press/2023/07/20230728004/20230728004.html
+    last_modified: '2023-07-28T00:00:00Z'
+    used_by:
+    - jurisdictions/japan
+  us-eo-14028:
+    id: us-eo-14028
+    title: 'Executive Order 14028: Improving the Nation''s Cybersecurity'
+    author: Executive Office of the President of the United States
+    resource: https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity
+    last_modified: '2025-06-06T00:00:00Z'
+    used_by:
+    - jurisdictions/united-states
+    - law/united-states/eo-14028
+  cisa-minimum-elements-2026:
+    id: cisa-minimum-elements-2026
+    title: 2026 Minimum Elements for a Software Bill of Materials (SBOM)
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    resource: https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom
+    last_modified: '2026-07-29T00:00:00Z'
+    used_by:
+    - jurisdictions/united-states
+    - requirements/united-states/cisa-minimum-elements-2026
+    - timeline/cisa-2026-minimum-elements
+  slsa-spec-v1-2:
+    id: slsa-spec-v1-2
+    title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.2
+    author: OpenSSF SLSA Working Group
+    resource: https://slsa.dev/spec/v1.2/
+    last_modified: '2024-09-01T00:00:00Z'
+    used_by:
+    - procedures/provenance-verification
+    - roles/package-registry
+    - standards/attestation-and-provenance/slsa-1-2
+  cyclonedx-specification:
+    id: cyclonedx-specification
+    title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
+    author: OWASP Foundation / Ecma International
+    resource: https://cyclonedx.org/specification/overview/
+    last_modified: '2024-05-01T00:00:00Z'
+    used_by:
+    - procedures/sbom-generation-at-build
+    - procedures/vulnerability-matching-and-vex
+  cencenelec-standardization:
+    id: cencenelec-standardization
+    title: CEN/CENELEC Cybersecurity Standardization Activities
+    author: European Committee for Standardization (CEN) / CENELEC
+    resource: https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/cybersecurity/
+    last_modified: '2025-01-15T00:00:00Z'
+    used_by:
+    - requirements/european-union/pren-40000-1-3
+  cisa-self-attestation-form:
+    id: cisa-self-attestation-form
+    title: CISA Secure Software Development Self-Attestation Form
+    author: Cybersecurity and Infrastructure Security Agency (CISA)
+    resource: https://www.cisa.gov/secure-software-development-attestation-form
+    last_modified: '2024-03-11T00:00:00Z'
+    used_by:
+    - requirements/united-states/cisa-self-attestation
+  whitehouse-omb-m2218:
+    id: whitehouse-omb-m2218
+    title: 'OMB Memorandum M-22-18: Enhancing the Security of the Software Supply
+      Chain through Secure Software Development Practices'
+    author: Office of Management and Budget (OMB)
+    resource: https://www.whitehouse.gov/wp-content/uploads/2022/09/M-22-18.pdf
+    last_modified: '2022-09-14T00:00:00Z'
+    used_by:
+    - requirements/united-states/omb-memoranda-m-22-18-m-23-16
+  nist-sp-800-218:
+    id: nist-sp-800-218
+    title: 'NIST SP 800-218: Secure Software Development Framework (SSDF) Version
+      1.1'
+    author: National Institute of Standards and Technology (NIST)
+    resource: https://csrc.nist.gov/publications/detail/sp/800-218/final
+    last_modified: '2022-02-03T00:00:00Z'
+    used_by:
+    - requirements/united-states/ssdf-nist-sp-800-218
+    - roles/tool-vendor
+    - standards/frameworks/ssdf
+  dsse-spec:
+    id: dsse-spec
+    title: Dead Simple Signing Envelope (DSSE) Specification
+    author: Secure Systems Lab (New York University)
+    resource: https://github.com/secure-systems-lab/dsse
+    last_modified: '2023-02-01T00:00:00Z'
+    used_by:
+    - standards/attestation-and-provenance/dsse
+  in-toto-spec:
+    id: in-toto-spec
+    title: in-toto Attestation Framework Specification
+    author: Cloud Native Computing Foundation (CNCF)
+    resource: https://in-toto.io/
+    last_modified: '2025-02-10T00:00:00Z'
+    used_by:
+    - standards/attestation-and-provenance/in-toto
+  scitt-ietf:
+    id: scitt-ietf
+    title: Supply Chain Integrity, Transparency, and Trust (SCITT) Working Group
+    author: Internet Engineering Task Force (IETF)
+    resource: https://datatracker.ietf.org/wg/scitt/about/
+    last_modified: '2024-03-01T00:00:00Z'
+    used_by:
+    - standards/attestation-and-provenance/scitt
+  sigstore-project:
+    id: sigstore-project
+    title: Sigstore Signing and Transparency Architecture
+    author: OpenSSF / Linux Foundation
+    resource: https://www.sigstore.dev/
+    last_modified: '2024-06-01T00:00:00Z'
+    used_by:
+    - standards/attestation-and-provenance/sigstore
+  slsa-spec-v1-0:
+    id: slsa-spec-v1-0
+    title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
+    author: OpenSSF SLSA Working Group
+    resource: https://slsa.dev/spec/v1.0/
+    last_modified: '2023-04-18T00:00:00Z'
+    used_by:
+    - standards/attestation-and-provenance/slsa-1-0
+    - timeline/slsa-1-0-release
+  nist-sp-800-161r1:
+    id: nist-sp-800-161r1
+    title: 'NIST SP 800-161r1: Cybersecurity Supply Chain Risk Management Practices
+      for Systems and Organizations'
+    author: National Institute of Standards and Technology (NIST)
+    resource: https://csrc.nist.gov/publications/detail/sp/800-161/rev-1/final
+    last_modified: '2022-05-05T00:00:00Z'
+    used_by:
+    - standards/frameworks/nist-sp-800-161r1
+  openssf-scorecard-spec:
+    id: openssf-scorecard-spec
+    title: 'OpenSSF Scorecard: Automated Security Metric for Open Source Software'
+    author: Open Source Security Foundation (OpenSSF)
+    resource: https://scorecard.dev/
+    last_modified: '2024-04-01T00:00:00Z'
+    used_by:
+    - standards/frameworks/openssf-scorecard
+  openssf-s2c2f-spec:
+    id: openssf-s2c2f-spec
+    title: Secure Supply Chain Consumption Framework (S2C2F) Specification
+    author: Open Source Security Foundation (OpenSSF)
+    resource: https://github.com/ossf/s2c2f
+    last_modified: '2023-05-01T00:00:00Z'
+    used_by:
+    - standards/frameworks/s2c2f
+  owasp-scvs-spec:
+    id: owasp-scvs-spec
+    title: OWASP Software Component Verification Standard (SCVS)
+    author: OWASP Foundation
+    resource: https://owasp.org/www-project-software-component-verification-standard/
+    last_modified: '2023-10-01T00:00:00Z'
+    used_by:
+    - standards/frameworks/scvs
+  nist-cpe-spec:
+    id: nist-cpe-spec
+    title: 'Common Platform Enumeration: Dictionary and Specifications (CPE 2.3)'
+    author: National Institute of Standards and Technology (NIST)
+    resource: https://csrc.nist.gov/projects/cpe
+    last_modified: '2023-01-01T00:00:00Z'
+    used_by:
+    - standards/identifiers/cpe
+  omnibor-spec:
+    id: omnibor-spec
+    title: OmniBOR Specification
+    author: OmniBOR Community / Linux Foundation
+    resource: https://omnibor.org/spec/
+    last_modified: '2023-04-01T00:00:00Z'
+    used_by:
+    - standards/identifiers/omnibor
+  package-url-spec:
+    id: package-url-spec
+    title: Package URL (purl) Specification
+    author: Package URL Community
+    resource: https://github.com/package-url/purl-spec
+    last_modified: '2024-01-01T00:00:00Z'
+    used_by:
+    - standards/identifiers/package-url
+  swhid-spec:
+    id: swhid-spec
+    title: Software Heritage Persistent Identifier (SWHID) Specification v1.1
+    author: Software Heritage / SWHID Working Group
+    resource: https://www.swhid.org/specification/v1.1/
+    last_modified: '2023-09-01T00:00:00Z'
+    used_by:
+    - standards/identifiers/swhid
+  cyclonedx-1-5-spec:
+    id: cyclonedx-1-5-spec
+    title: OWASP CycloneDX Software Bill of Materials Specification v1.5
+    author: OWASP Foundation
+    resource: https://cyclonedx.org/docs/1.5/
+    last_modified: '2023-06-01T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/cyclonedx-1-5
+  cyclonedx-1-6-spec:
+    id: cyclonedx-1-6-spec
+    title: OWASP CycloneDX Software Bill of Materials Specification v1.6 (ECMA-424
+      1st Edition)
+    author: OWASP Foundation / Ecma International
+    resource: https://cyclonedx.org/docs/1.6/
+    last_modified: '2024-06-01T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/cyclonedx-1-6
+  cyclonedx-1-7-spec:
+    id: cyclonedx-1-7-spec
+    title: OWASP CycloneDX Software Bill of Materials Specification v1.7 (ECMA-424
+      2nd Edition)
+    author: OWASP Foundation / Ecma International
+    resource: https://cyclonedx.org/specification/overview/
+    last_modified: '2025-10-21T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/cyclonedx-1-7
+    - standards/vex/cyclonedx-vex
+    - timeline/ecma-424-cyclonedx
+  iso-iec-5962:
+    id: iso-iec-5962
+    title: ISO/IEC 5962:2021 Information technology - SPDX Specification V2.2.1
+    author: International Organization for Standardization (ISO) / IEC
+    resource: https://www.iso.org/standard/81870.html
+    last_modified: '2021-09-09T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/iso-iec-5962
+    - timeline/spdx-iso-adoption
+  spdx-2-3-spec:
+    id: spdx-2-3-spec
+    title: Software Package Data Exchange (SPDX) Specification Version 2.3
+    author: Linux Foundation (SPDX Workgroup)
+    resource: https://spdx.github.io/spdx-spec/v2.3/
+    last_modified: '2022-11-28T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/spdx-2-3
+  spdx-3-0-spec:
+    id: spdx-3-0-spec
+    title: Software Package Data Exchange (SPDX) Specification Version 3.0.1
+    author: Linux Foundation (SPDX Workgroup)
+    resource: https://spdx.github.io/spdx-spec/v3.0.1/
+    last_modified: '2024-04-01T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/spdx-3-0
+  iso-iec-19770-2:
+    id: iso-iec-19770-2
+    title: 'ISO/IEC 19770-2:2015 Information technology - Software asset management
+      - Part 2: Software identification tag'
+    author: International Organization for Standardization (ISO) / IEC
+    resource: https://www.iso.org/standard/65666.html
+    last_modified: '2015-10-01T00:00:00Z'
+    used_by:
+    - standards/sbom-formats/swid-coswid
+  oasis-csaf-2-0:
+    id: oasis-csaf-2-0
+    title: Common Security Advisory Framework Version 2.0 (CSAF v2.0)
+    author: OASIS Common Security Advisory Framework TC
+    resource: https://docs.oasis-open.org/csaf/csaf/v2.0/os/csaf-v2.0-os.html
+    last_modified: '2022-11-18T00:00:00Z'
+    used_by:
+    - standards/vex/csaf-vex
+  openvex-spec:
+    id: openvex-spec
+    title: OpenVEX Specification Version 0.2.0
+    author: OpenVEX Project
+    resource: https://github.com/openvex/spec
+    last_modified: '2023-08-01T00:00:00Z'
+    used_by:
+    - standards/vex/openvex

@@ -1,6 +1,6 @@
 ---
 type: Procedure
-title: 'Procedure: Reproducible Builds Verification'
+title: "Procedure: Reproducible Builds Verification"
 description: Configuring deterministic compilation to ensure bit-for-bit identical
   outputs independently verifiable from source.
 category: procedure

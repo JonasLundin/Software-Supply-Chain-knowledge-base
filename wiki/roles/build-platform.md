@@ -1,6 +1,6 @@
 ---
 type: Role
-title: 'Role: Build Platform / CI Provider'
+title: "Role: Build Platform / CI Provider"
 description: Infrastructure or hosted service executing software compilation, packaging,
   and issuing provenance attestations.
 category: role

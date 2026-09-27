@@ -1,30 +1,29 @@
 ---
 type: Law
-title: 'NIS2 Directive Article 21(2)(d): Supply Chain Security'
-description: Statutory requirements for essential and important entities to assess
-  and mitigate cybersecurity risks across their ICT supply chain.
+title: NIS2 Directive (Directive (EU) 2022/2555) Article 21 Supply-Chain Security
+description: Legal obligations under NIS2 Article 21(2)(d) for essential and important
+  entities to address supply-chain cybersecurity risks.
 category: law
 tags:
-- supply-chain
 - law
+- eu
 - nis2
-- directive-eu-2022-2555
-- risk-management
+- supply-chain
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2027-10-17T00:00:00Z'
 sources:
-- id: eu-cra-regulation
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
+- id: eu-nis2-directive
+  resource: http://data.europa.eu/eli/dir/2022/2555/oj
+  title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+    across the Union (NIS2)
   author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+  last_modified: '2022-12-14T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: International
-  authority_level: binding
+  jurisdiction: EU
+  authority_level: statutory
   instrument_status: in_force
   provision: Directive (EU) 2022/2555 Article 21(2)(d)
   checked_at: '2026-09-27T00:00:00Z'
@@ -32,32 +31,22 @@ x-software-supply-chain:
 
 # Summary
 
-**Article 21(2)(d) of Directive (EU) 2022/2555 (NIS2)** imposes a direct statutory obligation on essential and important entities across 18 critical sectors to manage cybersecurity risks throughout their supply chains and supplier relationships[^eu-cra-regulation].
+**Directive (EU) 2022/2555 (NIS2)** requires essential and important entities across 18 critical sectors to implement risk-based cybersecurity measures, including supply chain security[^eu-nis2-directive].
 
-NIS2 recognizes that adversaries frequently compromise critical infrastructure by breaching smaller, less-defended upstream software suppliers, service providers, and managed service operators (MSPs).
+# Statutory Obligations under Article 21(2)(d)
+Article 21(2)(d) mandates that cybersecurity risk-management measures shall include:
+> "supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers".
 
-# Statutory Requirements under Article 21(2)(d) & Article 21(3)
+### Supplier Risk Factors (Article 21(3))
+Entities must take into account:
+1. The specific vulnerabilities of each direct supplier and service provider.
+2. The overall quality of cybersecurity practices, secure development policies, and coordinated vulnerability disclosure mechanisms employed by suppliers.
 
-Under Article 21(2)(d), risk management measures must explicitly address:
-> *"supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers."*
-
-### Key Mandates for Regulated Entities:
-1. **Supplier Vulnerability Assessments**: Entities must account for the vulnerabilities specific to each direct supplier and service provider.
-2. **Quality of Cybersecurity Practices**: Entities must evaluate the overall quality and cybersecurity hygiene of their suppliers' products and development practices, including secure coding procedures.
-3. **Coordinated Union-Level Risk Assessments**: Entities must take into account the results of coordinated risk assessments of critical supply chains conducted by the Cooperation Group and ENISA (e.g. 5G cybersecurity toolbox, ICT supply chain assessments).
-4. **Contractual Security Guarantees**: Regulated entities must embed mandatory cybersecurity obligations into commercial supplier contracts:
-   - Mandatory delivery of component inventories (SBOMs);
-   - Rapid notification of zero-day vulnerabilities (matching NIS2 early warning clocks);
-   - Right to audit supplier security controls and software development environments.
-
-# Enforcement & Penalties
-Failure to implement supply chain risk management measures subjects entities to severe administrative sanctions under Article 34:
-- Essential entities: Administrative fines up to **€10,000,000** or **2% of total global annual turnover**.
-- Important entities: Administrative fines up to **€7,000,000** or **1.4% of total global annual turnover**.
+*(Note: NIS2 does not mandate specific technical file formats, automatic source code audit rights, or zero-defect contractual guarantees; entities determine technical controls proportionally based on risk assessments).*
 
 # Related concepts
-- [CRA Supply Chain Provisions](cra-supply-chain.md)
-- [Software Consumer Role](../../roles/software-consumer.md)
-- [Dependency Due Diligence Procedure](../../procedures/dependency-due-diligence.md)
+- [NIS2 Knowledge Base](https://github.com/JonasLundin/NIS2-knowledge-base)
+- [CRA Supply Chain](cra-supply-chain.md)
+- [Dependency Due Diligence](../../procedures/dependency-due-diligence.md)
 
-[^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^eu-nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

@@ -1,28 +1,27 @@
 ---
-type: Concept
-title: NTIA Framing and Frequently Asked Questions on SBOM
-description: National Telecommunications and Information Administration foundational
-  documentation on SBOM concepts and processes.
+type: Guidance
+title: NTIA Software Bill of Materials (SBOM) Frequently Asked Questions
+description: Informational guide addressing common operational questions regarding
+  SBOM implementation and industry adoption.
 category: guidance
 tags:
-- software-supply-chain
 - guidance
+- us
 - ntia
-- sbom-faq
+- sbom
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: regulation-eu-2024-2847
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
-  author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+- id: ntia-sbom-faq
+  resource: https://www.ntia.gov/files/ntia/publications/sbom_faq_20210712.pdf
+  title: Software Bill of Materials (SBOM) Frequently Asked Questions
+  author: National Telecommunications and Information Administration (NTIA)
+  last_modified: '2021-07-12T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: International
+  jurisdiction: US
   authority_level: guidance
   instrument_status: in_force
   checked_at: '2026-09-27T00:00:00Z'
@@ -30,10 +29,18 @@ x-software-supply-chain:
 
 # Summary
 
-The **NTIA Multi-Stakeholder Process** produced foundational guidance defining SBOM framing, data formats, and operational exchange considerations[^regulation-eu-2024-2847].
+The **NTIA SBOM FAQ** serves as a foundational educational document produced by the multi-stakeholder SBOM initiative to clarify common implementation questions[^ntia-sbom-faq].
+
+> [!NOTE]
+> **Informational Guidance**: Provides practical explanations of SBOM terminology, benefits, and misconceptions.
+
+# Core Topics Covered
+- **Vulnerability Transparency**: Explains that having an SBOM does not expose source code or proprietary trade secrets.
+- **Dependency Depth**: Recommends starting with top-level direct dependencies and progressively expanding depth as automated tooling matures.
+- **Ecosystem Integration**: Details how SBOMs enable automated vulnerability correlation against the National Vulnerability Database (NVD).
 
 # Related concepts
-- [NTIA Guidance Index](index.md)
-- [NTIA Minimum Elements](../../requirements/united-states/../../requirements/united-states/ntia-minimum-elements.md)
+- [NTIA Minimum Elements (Superseded)](../../requirements/united-states/ntia-minimum-elements.md)
+- [CISA 2026 Minimum Elements](../../requirements/united-states/cisa-minimum-elements-2026.md)
 
-[^regulation-eu-2024-2847]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^ntia-sbom-faq]: National Telecommunications and Information Administration (NTIA), Software Bill of Materials (SBOM) Frequently Asked Questions, https://www.ntia.gov/files/ntia/publications/sbom_faq_20210712.pdf
