@@ -56,6 +56,6 @@ Under Article 13(5) of the Cyber Resilience Act, manufacturers are legally manda
 # Related concepts
 - [Software Producer](../roles/software-producer.md)
 - [Open-Source Steward](../roles/open-source-steward.md)
-- [CRA Supply Chain Provisions](../law/cra-supply-chain.md)
+- [CRA Supply Chain Provisions](../law/eu/cra-supply-chain.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj

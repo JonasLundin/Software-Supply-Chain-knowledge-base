@@ -139,10 +139,10 @@ jobs:
 
 # Related concepts
 
-- [CRA Supply Chain Provisions](../law/cra-supply-chain.md)
-- [European Union Jurisdiction Overview](../jurisdictions/european-union.md)
-- [Dependency Due Diligence Procedure](../procedures/dependency-due-diligence.md)
-- [NTIA Minimum Elements](ntia-minimum-elements.md)
-- [OWASP CycloneDX 1.6 (ECMA-424)](../standards/sbom-formats/cyclonedx-1-6.md)
+- [CRA Supply Chain Provisions](../../law/eu/../../law/eu/cra-supply-chain.md)
+- [European Union Jurisdiction Overview](../../jurisdictions/european-union.md)
+- [Dependency Due Diligence Procedure](../../procedures/dependency-due-diligence.md)
+- [NTIA Minimum Elements](../united-states/ntia-minimum-elements.md)
+- [OWASP CycloneDX 1.6 (ECMA-424)](../../standards/sbom-formats/cyclonedx-1-6.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj

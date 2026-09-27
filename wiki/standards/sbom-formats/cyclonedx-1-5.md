@@ -216,7 +216,7 @@ cyclonedx-cli validate --input-file sbom.cdx.json --spec-version 1.5
 - [CycloneDX Native VEX](../vex/cyclonedx-vex.md)
 - [SPDX 2.3 (ISO/IEC 5962:2021)](spdx-2-3.md)
 - [Package URL Specification](../../glossary/package-url.md)
-- [NTIA Minimum Elements](../../requirements/ntia-minimum-elements.md)
+- [NTIA Minimum Elements](../../requirements/united-states/ntia-minimum-elements.md)
 
 [^cyclonedx-specification]: OWASP Foundation / Ecma International, OWASP CycloneDX Software Bill of Materials Standard (ECMA-424), https://cyclonedx.org/specification/overview/
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

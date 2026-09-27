@@ -2,4 +2,6 @@
 
 Other national instruments with SBOM or provenance duties.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [UK Code of Practice for Software Vendors](uk-code-of-practice.md) — Department for Science, Innovation and Technology (DSIT) code of practice for software supply chain security.

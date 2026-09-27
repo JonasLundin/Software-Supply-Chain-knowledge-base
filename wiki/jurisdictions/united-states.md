@@ -45,9 +45,9 @@ Mandated that federal agencies may only use software developed in accordance wit
 Enforces mandatory self-attestation for all software producers selling to federal departments, requiring executive certification of build environment security, vulnerability disclosure programs, and third-party dependency tracking.
 
 # Related concepts
-- [NTIA Minimum Elements for an SBOM](../requirements/ntia-minimum-elements.md)
-- [CISA Secure Software Development Attestation](../requirements/cisa-self-attestation.md)
-- [NIST Secure Software Development Framework (SSDF)](../requirements/ssdf-nist-sp-800-218.md)
-- [CISA SBOM Sharing and Distribution Guidance](../guidance/cisa-sbom-sharing-guidance.md)
+- [NTIA Minimum Elements for an SBOM](../requirements/united-states/ntia-minimum-elements.md)
+- [CISA Secure Software Development Attestation](../requirements/united-states/cisa-self-attestation.md)
+- [NIST Secure Software Development Framework (SSDF)](../requirements/united-states/ssdf-nist-sp-800-218.md)
+- [CISA SBOM Sharing and Distribution Guidance](../guidance/cisa/cisa-sbom-sharing-guidance.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

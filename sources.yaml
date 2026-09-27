@@ -50,14 +50,14 @@ sources:
     used_by:
     - glossary/software-bill-of-materials
     - glossary/vex
-    - guidance/cisa-sbom-sharing-guidance
+    - guidance/cisa/cisa-sbom-sharing-guidance
     - jurisdictions/germany
     - jurisdictions/japan
     - jurisdictions/united-kingdom
     - jurisdictions/united-states
-    - requirements/cisa-self-attestation
-    - requirements/ntia-minimum-elements
-    - requirements/ssdf-nist-sp-800-218
+    - requirements/united-states/cisa-self-attestation
+    - requirements/united-states/ntia-minimum-elements
+    - requirements/united-states/ssdf-nist-sp-800-218
     - roles/software-consumer
     - standards/vex/csaf-vex
     - standards/vex/openvex
@@ -72,10 +72,10 @@ sources:
     last_modified: '2024-11-20T00:00:00Z'
     used_by:
     - jurisdictions/european-union
-    - law/cra-supply-chain
-    - law/nis2-article-21-supply-chain
+    - law/eu/cra-supply-chain
+    - law/eu/nis2-article-21-supply-chain
     - procedures/dependency-due-diligence
-    - requirements/cra-sbom-mandate
+    - requirements/european-union/cra-sbom-mandate
     - roles/open-source-steward
     - roles/software-producer
     - timeline/cra-application-2027

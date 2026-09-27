@@ -54,6 +54,6 @@ Open-source stewards play a critical role in establishing default security mecha
 # Related concepts
 - [Software Producer](software-producer.md)
 - [Package Registry](package-registry.md)
-- [Cyber Resilience Act: Supply Chain Provisions](../law/cra-supply-chain.md)
+- [Cyber Resilience Act: Supply Chain Provisions](../law/eu/cra-supply-chain.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj

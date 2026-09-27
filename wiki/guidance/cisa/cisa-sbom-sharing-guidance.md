@@ -65,9 +65,9 @@ Software producers often express concern that public SBOMs expose proprietary in
 - **Companion VEX Publishing**: Always pairing SBOM distribution with authoritative Vulnerability Exploitability eXchange (VEX) feeds to prevent consumers from misinterpreting unreachable vulnerabilities as active risks.
 
 # Related concepts
-- [NTIA Minimum Elements for an SBOM](../requirements/ntia-minimum-elements.md)
-- [CSAF 2.0 VEX Profile](../standards/vex/csaf-vex.md)
-- [Software Producer Role](../roles/software-producer.md)
-- [Software Consumer Role](../roles/software-consumer.md)
+- [NTIA Minimum Elements for an SBOM](../../requirements/united-states/../../requirements/united-states/ntia-minimum-elements.md)
+- [CSAF 2.0 VEX Profile](../../standards/vex/csaf-vex.md)
+- [Software Producer Role](../../roles/software-producer.md)
+- [Software Consumer Role](../../roles/software-consumer.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

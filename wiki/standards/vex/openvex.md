@@ -165,6 +165,6 @@ grype acme/auth-proxy:latest --vex auth-proxy.openvex.json
 - [CycloneDX Native VEX](cyclonedx-vex.md)
 - [VEX Glossary Term](../../glossary/vex.md)
 - [Vulnerability Matching and VEX Procedure](../../procedures/vulnerability-matching-and-vex.md)
-- [NTIA Minimum Elements](../../requirements/ntia-minimum-elements.md)
+- [NTIA Minimum Elements](../../requirements/united-states/ntia-minimum-elements.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

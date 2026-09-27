@@ -63,6 +63,6 @@ The attestation form must be signed by the **Chief Executive Officer (CEO)** of 
 # Related concepts
 - [NIST Secure Software Development Framework (SSDF)](ssdf-nist-sp-800-218.md)
 - [NTIA Minimum Elements for an SBOM](ntia-minimum-elements.md)
-- [CISA SBOM Sharing Guidance](../guidance/cisa-sbom-sharing-guidance.md)
+- [CISA SBOM Sharing Guidance](../../guidance/cisa/../../guidance/cisa/cisa-sbom-sharing-guidance.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

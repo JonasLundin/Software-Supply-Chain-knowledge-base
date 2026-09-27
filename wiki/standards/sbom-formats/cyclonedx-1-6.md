@@ -163,7 +163,7 @@ cyclonedx-cli validate --input-file sbom-1.6.cdx.json --spec-version 1.6
 - [OWASP CycloneDX 1.5 Specification](cyclonedx-1-5.md)
 - [CycloneDX Native VEX](../vex/cyclonedx-vex.md)
 - [SPDX 3.0 Specification](spdx-3-0.md)
-- [CRA SBOM Mandate](../../requirements/cra-sbom-mandate.md)
+- [CRA SBOM Mandate](../../requirements/european-union/cra-sbom-mandate.md)
 - [SBOM Generation in Build Pipelines](../../procedures/sbom-generation-at-build.md)
 
 [^cyclonedx-specification]: OWASP Foundation / Ecma International, OWASP CycloneDX Software Bill of Materials Standard (ECMA-424), https://cyclonedx.org/specification/overview/

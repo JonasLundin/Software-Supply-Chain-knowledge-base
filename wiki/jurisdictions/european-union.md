@@ -49,8 +49,8 @@ The **European Union** has established the world's most legally binding and comp
 - Full CRA product conformity, CE marking, and SBOM inventory requirements apply from **11 December 2027**.
 
 # Related concepts
-- [CRA Component Inventory & Vulnerability Identification](../requirements/cra-sbom-mandate.md)
-- [Cyber Resilience Act: Supply Chain Provisions](../law/cra-supply-chain.md)
-- [NIS2 Article 21(2)(d): Supply Chain Risk Management](../law/nis2-article-21-supply-chain.md)
+- [CRA Component Inventory & Vulnerability Identification](../requirements/european-union/cra-sbom-mandate.md)
+- [Cyber Resilience Act: Supply Chain Provisions](../law/eu/cra-supply-chain.md)
+- [NIS2 Article 21(2)(d): Supply Chain Risk Management](../law/eu/nis2-article-21-supply-chain.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj

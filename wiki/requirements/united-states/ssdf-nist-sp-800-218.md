@@ -89,6 +89,6 @@ Mandated for federal agency procurement under OMB Memoranda M-22-18 and M-23-16,
 # Related concepts
 - [CISA Secure Software Development Attestation](cisa-self-attestation.md)
 - [NTIA Minimum Elements for an SBOM](ntia-minimum-elements.md)
-- [SLSA v1.0 Framework](../standards/attestation-and-provenance/slsa-1-0.md)
+- [SLSA v1.0 Framework](../../standards/attestation-and-provenance/slsa-1-0.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

@@ -3,18 +3,18 @@ release: 0.1.0
 baseline: '2026-09-27'
 coverage_status: complete
 review_status: unverified
-total_concepts: 41
+total_concepts: 52
 by_category:
-  format: 7
-  glossary: 4
-  guidance: 1
-  jurisdiction: 5
-  law: 2
   procedure: 5
-  requirement: 4
+  jurisdiction: 5
   role: 5
-  standard: 4
+  glossary: 4
   timeline: 4
+  format: 7
+  standard: 6
+  requirement: 6
+  law: 4
+  guidance: 6
 by_type:
   Format: 7
   Glossary: 4

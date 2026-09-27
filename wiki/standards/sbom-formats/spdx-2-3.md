@@ -213,7 +213,7 @@ pyspdxtools -i sbom-project.spdx.json
 - [SPDX 3.0 Specification](spdx-3-0.md)
 - [OWASP CycloneDX 1.6 (ECMA-424)](cyclonedx-1-6.md)
 - [Package URL Specification](../../glossary/package-url.md)
-- [NTIA Minimum Elements](../../requirements/ntia-minimum-elements.md)
+- [NTIA Minimum Elements](../../requirements/united-states/ntia-minimum-elements.md)
 - [SBOM Generation in Build Pipelines](../../procedures/sbom-generation-at-build.md)
 
 [^spdx-iso-5962]: Linux Foundation / ISO/IEC JTC 1, Software Package Data Exchange (SPDX) Specification (ISO/IEC 5962:2021), https://spdx.dev/specifications/

@@ -2,4 +2,6 @@
 
 Package URL, CPE, SWHID, OmniBOR, hashes and how formats reference them.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [Package URL (purl) Specification](package-url.md) — Standardized URI specification to identify and locate software packages across package managers and programming languages.

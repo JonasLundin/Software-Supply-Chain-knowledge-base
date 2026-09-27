@@ -2,4 +2,6 @@
 
 NCSC-UK, NCSC-NL and other national guidance.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [NCSC Principles for Supply Chain Security](ncsc-supply-chain-principles.md) — UK National Cyber Security Centre 12 principles for managing supply chain cybersecurity risks.

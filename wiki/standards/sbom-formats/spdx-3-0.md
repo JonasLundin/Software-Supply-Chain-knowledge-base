@@ -175,8 +175,8 @@ spdx3-validate --file spdx3-manifest.jsonld --profile software security
 - [SPDX 2.3 (ISO/IEC 5962:2021)](spdx-2-3.md)
 - [OWASP CycloneDX 1.6 (ECMA-424)](cyclonedx-1-6.md)
 - [OpenVEX Specification](../vex/openvex.md)
-- [CRA SBOM Mandate](../../requirements/cra-sbom-mandate.md)
-- [NTIA Minimum Elements](../../requirements/ntia-minimum-elements.md)
+- [CRA SBOM Mandate](../../requirements/european-union/cra-sbom-mandate.md)
+- [NTIA Minimum Elements](../../requirements/united-states/ntia-minimum-elements.md)
 
 [^spdx-iso-5962]: Linux Foundation / ISO/IEC JTC 1, Software Package Data Exchange (SPDX) Specification (ISO/IEC 5962:2021), https://spdx.dev/specifications/
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

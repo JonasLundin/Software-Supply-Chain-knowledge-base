@@ -2,4 +2,6 @@
 
 Guides, SLSA documentation, Scorecard documentation.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [OpenSSF Scorecard and Best Practices Guidelines](scorecard-and-best-practices.md) — Open Source Security Foundation automated tooling and badge criteria for open-source package security health.

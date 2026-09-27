@@ -66,9 +66,9 @@ Recognizing that open-source foundations and individual maintainers do not opera
 - **Full Supply Chain & SBOM Mandates**: Mandatory from **11 December 2027**.
 
 # Related concepts
-- [CRA Component Inventory & Vulnerability Identification](../requirements/cra-sbom-mandate.md)
+- [CRA Component Inventory & Vulnerability Identification](../../requirements/european-union/../../requirements/european-union/cra-sbom-mandate.md)
 - [NIS2 Article 21(2)(d): Supply Chain Risk Management](nis2-article-21-supply-chain.md)
-- [Software Producer Role](../roles/software-producer.md)
-- [Open-Source Steward Role](../roles/open-source-steward.md)
+- [Software Producer Role](../../roles/software-producer.md)
+- [Open-Source Steward Role](../../roles/open-source-steward.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj

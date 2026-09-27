@@ -2,4 +2,6 @@
 
 TR-03183 explanatory material.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [BSI Guidelines on Software Bill of Materials Creation](bsi-sbom-guidelines.md) — Practical guidance from the German Federal Office for Information Security on SBOM generation and vulnerability handling.

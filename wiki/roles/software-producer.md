@@ -62,8 +62,8 @@ Software producers must establish automated capabilities integrated directly int
 # Related concepts
 - [Software Consumer](software-consumer.md)
 - [Open-Source Steward](open-source-steward.md)
-- [CRA Component Inventory & Vulnerability Identification](../requirements/cra-sbom-mandate.md)
-- [CISA Secure Software Development Attestation](../requirements/cisa-self-attestation.md)
+- [CRA Component Inventory & Vulnerability Identification](../requirements/european-union/cra-sbom-mandate.md)
+- [CISA Secure Software Development Attestation](../requirements/united-states/cisa-self-attestation.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

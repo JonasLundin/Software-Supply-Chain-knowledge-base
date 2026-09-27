@@ -77,9 +77,9 @@ To satisfy NTIA minimum elements, an SBOM must record seven core attributes for 
 - **Automation Support**: Tooling must support automated generation in continuous integration/continuous delivery (CI/CD) pipelines and automated ingestion into vulnerability scanners.
 
 # Related concepts
-- [SPDX 2.3 Standard](../standards/sbom-formats/spdx-2-3.md)
-- [CycloneDX 1.6 Standard](../standards/sbom-formats/cyclonedx-1-6.md)
-- [CRA Component Inventory Mandate](cra-sbom-mandate.md)
+- [SPDX 2.3 Standard](../../standards/sbom-formats/spdx-2-3.md)
+- [CycloneDX 1.6 Standard](../../standards/sbom-formats/cyclonedx-1-6.md)
+- [CRA Component Inventory Mandate](../european-union/cra-sbom-mandate.md)
 - [NIST Secure Software Development Framework (SSDF)](ssdf-nist-sp-800-218.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

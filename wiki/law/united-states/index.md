@@ -2,4 +2,6 @@
 
 Executive Order 14028 and implementing memoranda.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [Executive Order 14028 on Improving the Nation's Cybersecurity](eo-14028.md) — Presidential executive order mandating federal SBOM adoption, secure development environments, and NIST SSDF compliance.

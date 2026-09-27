@@ -58,8 +58,8 @@ Consumers enforce baseline supply-chain security terms in commercial agreements:
 # Related concepts
 - [Software Producer](software-producer.md)
 - [Package Registry](package-registry.md)
-- [NTIA Minimum Elements for an SBOM](../requirements/ntia-minimum-elements.md)
-- [NIS2 Article 21(2)(d): Supply Chain Risk Management](../law/nis2-article-21-supply-chain.md)
+- [NTIA Minimum Elements for an SBOM](../requirements/united-states/ntia-minimum-elements.md)
+- [NIS2 Article 21(2)(d): Supply Chain Risk Management](../law/eu/nis2-article-21-supply-chain.md)
 
 [^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj

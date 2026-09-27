@@ -2,4 +2,6 @@
 
 Japan METI, India CERT-In, sector rules (FDA, automotive, telecommunications).
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [ISO/IEC 5962:2021 SPDX Conformity Requirements](iso-iec-5962-conformity.md) — International standard defining the open standard specification for Software Package Data Exchange (SPDX).

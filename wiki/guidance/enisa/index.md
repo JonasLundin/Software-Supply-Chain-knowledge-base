@@ -2,4 +2,6 @@
 
 Supply-chain security reports and CRA-related guidance.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [ENISA Guidelines for Securing the Supply Chain](enisa-supply-chain-guidance.md) — European Union Agency for Cybersecurity guidance on assessing and managing ICT supplier risks.

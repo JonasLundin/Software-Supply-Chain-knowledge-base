@@ -2,4 +2,6 @@
 
 Multistakeholder process documents and the 2021 minimum elements.
 
-No concepts yet. Pages added here follow the concept shape described in the repository's CONTRIBUTING.md.
+## Concepts
+
+- [NTIA Framing and Frequently Asked Questions on SBOM](ntia-sbom-faq.md) — National Telecommunications and Information Administration foundational documentation on SBOM concepts and processes.

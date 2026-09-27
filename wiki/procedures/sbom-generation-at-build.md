@@ -206,7 +206,7 @@ jobs:
 - [OWASP CycloneDX 1.6 (ECMA-424)](../standards/sbom-formats/cyclonedx-1-6.md)
 - [SPDX 2.3 (ISO/IEC 5962:2021)](../standards/sbom-formats/spdx-2-3.md)
 - [SBOM Verification and Signing](sbom-verification-and-signing.md)
-- [CRA SBOM Mandate](../requirements/cra-sbom-mandate.md)
-- [NTIA Minimum Elements](../requirements/ntia-minimum-elements.md)
+- [CRA SBOM Mandate](../requirements/european-union/cra-sbom-mandate.md)
+- [NTIA Minimum Elements](../requirements/united-states/ntia-minimum-elements.md)
 
 [^cyclonedx-specification]: OWASP Foundation / Ecma International, OWASP CycloneDX Software Bill of Materials Standard (ECMA-424), https://cyclonedx.org/specification/overview/

@@ -57,7 +57,7 @@ Failure to implement supply chain risk management measures subjects entities to 
 
 # Related concepts
 - [CRA Supply Chain Provisions](cra-supply-chain.md)
-- [Software Consumer Role](../roles/software-consumer.md)
-- [Dependency Due Diligence Procedure](../procedures/dependency-due-diligence.md)
+- [Software Consumer Role](../../roles/software-consumer.md)
+- [Dependency Due Diligence Procedure](../../procedures/dependency-due-diligence.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
