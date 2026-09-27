@@ -1,4 +1,81 @@
 version: 1
-checked_at: '2026-09-26T00:00:00Z'
-total_sources: 0
-sources: {}
+checked_at: '2026-09-27T00:00:00Z'
+total_sources: 5
+sources:
+  spdx-iso-5962:
+    id: spdx-iso-5962
+    resource: https://spdx.dev/specifications/
+    title: Software Package Data Exchange (SPDX) Specification (ISO/IEC 5962:2021)
+    author: Linux Foundation / ISO/IEC JTC 1
+    last_modified: '2021-09-01T00:00:00Z'
+    used_by:
+    - glossary/package-url
+    - standards/sbom-formats/spdx-2-3
+    - standards/sbom-formats/spdx-3-0
+    - timeline/spdx-iso-adoption
+  cyclonedx-specification:
+    id: cyclonedx-specification
+    resource: https://cyclonedx.org/specification/overview/
+    title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
+    author: OWASP Foundation / Ecma International
+    last_modified: '2024-05-01T00:00:00Z'
+    used_by:
+    - procedures/sbom-generation-at-build
+    - procedures/vulnerability-matching-and-vex
+    - standards/sbom-formats/cyclonedx-1-5
+    - standards/sbom-formats/cyclonedx-1-6
+    - standards/vex/cyclonedx-vex
+  slsa-framework:
+    id: slsa-framework
+    resource: https://slsa.dev/spec/v1.0/
+    title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
+    author: OpenSSF SLSA Working Group
+    last_modified: '2023-04-18T00:00:00Z'
+    used_by:
+    - glossary/provenance
+    - procedures/reproducible-builds
+    - procedures/sbom-verification-and-signing
+    - roles/build-platform
+    - roles/package-registry
+    - standards/attestation-and-provenance/in-toto
+    - standards/attestation-and-provenance/sigstore
+    - standards/attestation-and-provenance/slsa-1-0
+    - standards/attestation-and-provenance/slsa-1-2
+  ntia-sbom-elements:
+    id: ntia-sbom-elements
+    resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+    title: The Minimum Elements For a Software Bill of Materials (SBOM)
+    author: National Telecommunications and Information Administration (NTIA)
+    last_modified: '2021-07-12T00:00:00Z'
+    used_by:
+    - glossary/software-bill-of-materials
+    - glossary/vex
+    - guidance/cisa-sbom-sharing-guidance
+    - jurisdictions/germany
+    - jurisdictions/japan
+    - jurisdictions/united-kingdom
+    - jurisdictions/united-states
+    - requirements/cisa-self-attestation
+    - requirements/ntia-minimum-elements
+    - requirements/ssdf-nist-sp-800-218
+    - roles/software-consumer
+    - standards/vex/csaf-vex
+    - standards/vex/openvex
+    - timeline/eo-14028-signing
+    - timeline/ntia-minimum-elements-publication
+  eu-cra-regulation:
+    id: eu-cra-regulation
+    resource: http://data.europa.eu/eli/reg/2024/2847/oj
+    title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for
+      products with digital elements (Cyber Resilience Act)
+    author: European Parliament and Council of the European Union
+    last_modified: '2024-11-20T00:00:00Z'
+    used_by:
+    - jurisdictions/european-union
+    - law/cra-supply-chain
+    - law/nis2-article-21-supply-chain
+    - procedures/dependency-due-diligence
+    - requirements/cra-sbom-mandate
+    - roles/open-source-steward
+    - roles/software-producer
+    - timeline/cra-application-2027

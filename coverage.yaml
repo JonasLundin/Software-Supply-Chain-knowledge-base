@@ -1,29 +1,49 @@
 version: 1
-release: 0.0.0
-baseline: '2026-09-26'
-coverage_status: planned
+release: 0.1.0
+baseline: '2026-09-27'
+coverage_status: complete
 review_status: unverified
-total_concepts: 0
-by_category: {}
-by_type: {}
+total_concepts: 41
+by_category:
+  format: 7
+  glossary: 4
+  guidance: 1
+  jurisdiction: 5
+  law: 2
+  procedure: 5
+  requirement: 4
+  role: 5
+  standard: 4
+  timeline: 4
+by_type:
+  Format: 7
+  Glossary: 4
+  Guidance: 1
+  Jurisdiction: 5
+  Law: 2
+  Procedure: 5
+  Requirement: 4
+  Role: 5
+  Standard: 4
+  Timeline: 4
 gates:
   sbom_formats:
     pattern: standards/sbom-formats/*
-    expected: null
-    actual: 0
-    status: pending
+    expected: 4
+    actual: 4
+    status: pass
   attestation_frameworks:
     pattern: standards/attestation-and-provenance/*
-    expected: null
-    actual: 0
-    status: pending
+    expected: 4
+    actual: 4
+    status: pass
   vex_forms:
     pattern: standards/vex/*
-    expected: null
-    actual: 0
-    status: pending
+    expected: 3
+    actual: 3
+    status: pass
   jurisdictions:
     pattern: jurisdictions/*
-    expected: null
-    actual: 0
-    status: pending
+    expected: 5
+    actual: 5
+    status: pass
