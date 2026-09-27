@@ -1,42 +1,212 @@
 ---
 type: Procedure
-title: Automated SBOM Generation at Build Time
-description: Generating machine-readable SBOMs directly from CI/CD pipeline build
-  contexts to capture exact dependency trees.
+title: Automated SBOM Generation in Build Pipelines
+description: Comprehensive engineering procedure for integrating automated, high-fidelity Software Bill of Materials generation into CI/CD build environments.
 category: procedure
 tags:
-- supply-chain
-- procedure
-- sbom-generation-at-build
+  - sbom
+  - ci-cd
+  - build-pipeline
+  - cyclonedx
+  - spdx
+  - procedure
 status: draft
 generated:
-  by: agent:antigravity
+  by: agent:kb-researcher-writer
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-- id: cyclonedx-specification
-  resource: https://cyclonedx.org/specification/overview/
-  title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
-  author: OWASP Foundation / Ecma International
-  last_modified: '2024-05-01T00:00:00Z'
+  - id: cyclonedx-specification
+    resource: https://cyclonedx.org/specification/overview/
+    title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
+    author: OWASP Foundation / Ecma International
+    last_modified: '2024-05-01T00:00:00Z'
 x-software-supply-chain:
   jurisdiction: International
-  authority_level: guidance
+  authority_level: standard
   instrument_status: in_force
-  provision: Build Integration
+  provision: DevSecOps Build Integration Guide
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-**Automated SBOM Generation at Build Time** across the software supply chain lifecycle[^cyclonedx-specification].
+**Automated SBOM Generation in Build Pipelines** is the definitive operational procedure for creating high-fidelity Software Bills of Materials (SBOMs) during continuous integration and compilation workflows[^cyclonedx-specification]. According to CISA guidance, a "Build SBOM" represents the gold standard of software component transparency because it is generated in situ as dependencies are resolved, evaluated, and compiled into the final shipping binary.
 
-Generating machine-readable SBOMs directly from CI/CD pipeline build contexts to capture exact dependency trees.
+Generating SBOMs post-facto via binary analysis or static lockfile inspection alone can result in discrepancies, such as omitting statically linked libraries, failing to detect compiler substitutions, or including development-only test harnesses. This procedure defines standard integration patterns across multiple programming runtimes and container build engines.
 
-# Procedural Steps
-Operational workflows implemented by engineering and security teams.
+```
++-----------------------------------------------------------------------------------------+
+|                    CI/CD In-Build SBOM Generation Architecture                          |
++-----------------------------------------------------------------------------------------+
+                                             |
+             +-------------------------------+-------------------------------+
+             |                                                               |
+             v                                                               v
++---------------------------------------+       +---------------------------------------+
+|        In-Build Native Plugin         |       |      Post-Compilation Container Scan  |
+|---------------------------------------|       |---------------------------------------|
+| - Maven / Gradle / npm / Cargo plugin |       | - Syft / cdxgen / Trivy scan          |
+| - Resolves exact dependency graph     |       | - Scans OS packages (apk, deb, rpm)   |
+| - Strips test/dev-only dependencies   |       | - Scans compiled binary symbols       |
+| - Emits: app-dependencies.cdx.json    |       | - Emits: container-os.cdx.json        |
++---------------------------------------+       +---------------------------------------+
+             |                                                               |
+             +-------------------------------+-------------------------------+
+                                             |
+                                             v
++-----------------------------------------------------------------------------------------+
+|                                    BOM Assembly & Merge                                 |
+|  - cyclonedx-cli merge: combines application and operating system BOMs                  |
+|  - Injects build environment metadata, git commit, and builder identity                 |
++-----------------------------------------------------------------------------------------+
+                                             |
+                                             v
++-----------------------------------------------------------------------------------------+
+|                                Cryptographic Signing & Output                           |
+|  - Cosign: attests merged SBOM to OCI container registry                                |
+|  - Secure Archive: uploads to long-term immutable compliance vault                      |
++-----------------------------------------------------------------------------------------+
+```
+
+# Technical Scope / Normative Requirements
+
+### In-Build vs Post-Build Generation Models
+
+To achieve complete supply-chain fidelity, generation procedures must combine two complementary layers:
+
+1. **Application Layer (Native Build Tooling)**:
+   - Generated by runtime-aware build plugins (e.g. `cyclonedx-maven-plugin`, `cyclonedx-gradle-plugin`, `@cyclonedx/cyclonedx-npm`, `cargo-auditable`).
+   - Captures exact transitive graph, build configurations, and multi-module relationships directly from the compiler's abstract syntax tree or package manager dependency tree.
+2. **System & Container Layer (Binary / Container Analyzers)**:
+   - Generated by tools such as Anchore Syft, cdxgen, or Microsoft sbom-tool.
+   - Detects base operating system packages (Debian dpkg, Alpine apk, Red Hat rpm), shared system libraries (glibc, OpenSSL), and unpacked runtime binaries.
+
+### Minimum Quality Criteria
+
+Generated SBOMs must satisfy the following pipeline gate conditions:
+- **Format Standard**: CycloneDX 1.5/1.6 (ECMA-424) or SPDX 2.3/3.0.
+- **Identifier Completeness**: 100% of non-root components must declare a valid Package URL (`purl`) and at least one cryptographic hash (SHA-256).
+- **Scope Exclusion**: Test and development dependencies (e.g. `devDependencies`, `testCompileClasspath`) must be excluded or strictly flagged with scope `test`.
+
+# Applicability & Operational Impact
+
+- **Software Producers**: Establishes continuous compliance with CRA Annex I Part II(1) and US federal procurement rules without manual developer intervention.
+- **DevOps / Platform Engineering**: Standardizes pipeline runner configurations across diverse technology stacks.
+- **Security Operations**: Feeds live component inventories directly into ASPM and vulnerability matching engines.
+
+# Practical Implementation
+
+### 1. Java / Kotlin (Maven & Gradle)
+
+Add the official CycloneDX plugin directly into `pom.xml`:
+
+```xml
+<plugin>
+    <groupId>org.cyclonedx</groupId>
+    <artifactId>cyclonedx-maven-plugin</artifactId>
+    <version>2.8.0</version>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <goals>
+                <goal>makeAggregateBom</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <projectType>application</projectType>
+        <schemaVersion>1.6</schemaVersion>
+        <includeTestScope>false</includeTestScope>
+    </configuration>
+</plugin>
+```
+
+### 2. Node.js / TypeScript
+
+```bash
+# Generate CycloneDX SBOM during release build
+npx @cyclonedx/cyclonedx-npm --output-file build/sbom.cdx.json --omit dev --spec-version 1.6
+```
+
+### 3. Rust (cargo-auditable)
+
+```bash
+# Embed dependency metadata directly into the compiled ELF binary
+cargo install cargo-auditable
+cargo auditable build --release
+
+# Extract CycloneDX SBOM from the compiled binary
+syft target/release/my-app -o cyclonedx-json=target/sbom.cdx.json
+```
+
+### 4. Merging Application and Container BOMs
+
+```bash
+# Merge application BOM and OS container BOM into a single unified BOM
+cyclonedx-cli merge \
+  --input-files app-sbom.cdx.json container-os-sbom.cdx.json \
+  --output-file final-production-sbom.cdx.json \
+  --hierarchical
+```
+
+### Complete GitHub Actions CI Workflow
+
+```yaml
+name: Secure Build & SBOM Generation
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Application
+        run: npm ci && npm run build
+
+      - name: Generate Application SBOM
+        run: npx @cyclonedx/cyclonedx-npm --output-file app-sbom.json --omit dev
+
+      - name: Build Docker Container
+        run: docker build -t acme/service:${{ github.sha }} .
+
+      - name: Scan Container OS Layer
+        uses: anchore/sbom-action@v0
+        with:
+          image: acme/service:${{ github.sha }}
+          format: cyclonedx-json
+          output-file: container-sbom.json
+
+      - name: Merge and Validate Final SBOM
+        run: |
+          npx @cyclonedx/cyclonedx-cli merge \
+            --input-files app-sbom.json container-sbom.json \
+            --output-file final-sbom.cdx.json
+          npx @cyclonedx/cyclonedx-cli validate \
+            --input-file final-sbom.cdx.json --spec-version 1.6
+
+      - name: Archive SBOM Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-sbom
+          path: final-sbom.cdx.json
+```
+
+# Dates and Transitions
+
+- **2021**: Initial post-build scanning tools gain widespread traction following US EO 14028.
+- **2023–2024**: Native in-build compiler plugins become industry standard to eliminate scanning blind spots.
+- **December 2027**: European CRA enforcement date requiring complete, machine-readable SBOMs for all market-facing digital products.
 
 # Related concepts
-- [Procedures Index](index.md)
+
+- [OWASP CycloneDX 1.6 (ECMA-424)](../standards/sbom-formats/cyclonedx-1-6.md)
+- [SPDX 2.3 (ISO/IEC 5962:2021)](../standards/sbom-formats/spdx-2-3.md)
+- [SBOM Verification and Signing](sbom-verification-and-signing.md)
+- [CRA SBOM Mandate](../requirements/cra-sbom-mandate.md)
+- [NTIA Minimum Elements](../requirements/ntia-minimum-elements.md)
 
 [^cyclonedx-specification]: OWASP Foundation / Ecma International, OWASP CycloneDX Software Bill of Materials Standard (ECMA-424), https://cyclonedx.org/specification/overview/
