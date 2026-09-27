@@ -38,4 +38,17 @@ On **September 9, 2021**, ISO and IEC published **ISO/IEC 5962:2021**, adopting 
 - [ISO/IEC 5962:2021 Standard](../standards/sbom-formats/iso-iec-5962.md)
 - [SPDX 2.3](../standards/sbom-formats/spdx-2-3.md)
 
-[^iso-iec-5962]: International Organization for Standardization (ISO) / IEC, ISO/IEC 5962:2021 Information technology - SPDX Specification V2.2.1, https://www.iso.org/standard/81870.html
+[^iso-iec-5962]: International Organization for Standardization (ISO) / IEC, ISO/IEC 5962:2021 Information technology - SPDX Specification V2.2.1, https://www.iso.org/standard/81870.html# Summary
+
+**August 2021**: The International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) formally publish **ISO/IEC 5962:2021**[^iso-iec-5962], adopting the **SPDX (Software Package Data Exchange) Specification v2.2.1** as an international standard.
+
+# Significance for Global Regulatory Harmonization
+
+ISO/IEC 5962:2021 established SPDX as the first internationally recognized formal standard for software component and license metadata exchange. Published through the Joint Technical Committee ISO/IEC JTC 1 under the PAS (Publicly Available Specification) transposition process, this standard gave public procurement authorities and international regulators a formal normative reference for mandating Software Bills of Materials in critical supply chain infrastructure.
+
+# Related concepts
+- [Timeline Index](index.md)
+- [ISO/IEC 5962:2021 Standard](../standards/sbom-formats/iso-iec-5962.md)
+- [SPDX 2.3 Specification](../standards/sbom-formats/spdx-2-3.md)
+
+[^iso-iec-5962]: International Organization for Standardization, ISO/IEC 5962:2021 Information technology — SPDX Specification V2.2.1, https://www.iso.org/standard/81870.html

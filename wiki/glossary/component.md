@@ -24,16 +24,17 @@ x-software-supply-chain:
   jurisdiction: EU
   authority_level: statutory
   instrument_status: in_force
-  provision: CRA Article 3(2)
+  provision: CRA Article 3(6)
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Definition
 
-A **software component** refers to a discrete, functional unit of software (such as a library, module, driver, or container image) incorporated into a larger product with digital elements[^eu-cra-regulation].
+Under Article 3(6) of Regulation (EU) 2024/2847 (Cyber Resilience Act)[^eu-cra-regulation], a **software component** refers to software intended to be integrated into a product with digital elements, or software that is integrated into such a product.
 
-# Context
-Tracking software components through automated SBOM generation allows asset owners to identify inherited vulnerabilities and establish license compliance across the entire product lifecycle.
+# Context and Supply Chain Governance
+
+A software component represents a discrete, functional unit of software—such as a library, module, driver, firmware image, or container layer—developed internally or acquired from third parties or open-source ecosystems. Tracking components through automated SBOM generation allows asset owners to identify inherited vulnerabilities, verify cryptographic signatures, and maintain rigorous supply chain visibility across the entire product lifecycle.
 
 # Related concepts
 - [Software Bill of Materials](software-bill-of-materials.md)

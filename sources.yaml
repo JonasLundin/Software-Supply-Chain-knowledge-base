@@ -27,7 +27,7 @@ sources:
     id: slsa-framework
     title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
     author: OpenSSF SLSA Working Group
-    resource: https://slsa.dev/spec/v1.0/
+    resource: https://slsa.dev/
     last_modified: '2023-04-18T00:00:00Z'
     used_by:
     - glossary/provenance
@@ -53,7 +53,7 @@ sources:
     id: bsi-tr-03183
     title: 'BSI Technical Guideline TR-03183: Cyber Resilience Requirements'
     author: Federal Office for Information Security (BSI)
-    resource: https://www.bsi.bund.de/EN/Themes/Cyber-Security/TR/TR-03183/TR-03183_node.html
+    resource: https://www.bsi.bund.de/dok/TR-03183-en
     last_modified: '2024-05-15T00:00:00Z'
     used_by:
     - guidance/bsi/bsi-sbom-guidelines
@@ -63,7 +63,7 @@ sources:
     id: cisa-sbom-sharing
     title: Software Bill of Materials Sharing Considerations
     author: Cybersecurity and Infrastructure Security Agency (CISA)
-    resource: https://www.cisa.gov/resources-tools/resources/software-bill-materials-sharing-considerations
+    resource: https://www.cisa.gov/sbom
     last_modified: '2023-04-01T00:00:00Z'
     used_by:
     - guidance/cisa/cisa-sbom-sharing-guidance
@@ -78,9 +78,9 @@ sources:
     - guidance/enisa/enisa-supply-chain-guidance
   ncsc-supply-chain-principles:
     id: ncsc-supply-chain-principles
-    title: Supply Chain Security Guidance
-    author: National Cyber Security Centre (NCSC)
-    resource: https://www.ncsc.gov/collection/supply-chain-security
+    title: Supply chain security guidance
+    author: National Cyber Security Centre (UK NCSC)
+    resource: https://www.ncsc.gov.uk/collection/supply-chain-security
     last_modified: '2023-01-26T00:00:00Z'
     used_by:
     - guidance/ncsc/ncsc-supply-chain-principles
@@ -97,7 +97,7 @@ sources:
     id: ntia-sbom-faq
     title: Software Bill of Materials (SBOM) Frequently Asked Questions
     author: National Telecommunications and Information Administration (NTIA)
-    resource: https://www.ntia.gov/files/ntia/publications/sbom_faq_20210712.pdf
+    resource: https://www.ntia.gov/page/software-bill-materials
     last_modified: '2021-07-12T00:00:00Z'
     used_by:
     - guidance/ntia/ntia-sbom-faq
@@ -178,7 +178,7 @@ sources:
     id: cisa-self-attestation-form
     title: CISA Secure Software Development Self-Attestation Form
     author: Cybersecurity and Infrastructure Security Agency (CISA)
-    resource: https://www.cisa.gov/secure-software-development-attestation-form
+    resource: https://www.cisa.gov/resources-tools/resources/secure-software-development-attestation-form
     last_modified: '2024-03-11T00:00:00Z'
     used_by:
     - requirements/united-states/cisa-self-attestation
@@ -280,7 +280,7 @@ sources:
     id: nist-cpe-spec
     title: 'Common Platform Enumeration: Dictionary and Specifications (CPE 2.3)'
     author: National Institute of Standards and Technology (NIST)
-    resource: https://csrc.nist.gov/projects/cpe
+    resource: https://nvd.nist.gov/products/cpe
     last_modified: '2023-01-01T00:00:00Z'
     used_by:
     - standards/identifiers/cpe
@@ -288,7 +288,7 @@ sources:
     id: omnibor-spec
     title: OmniBOR Specification
     author: OmniBOR Community / Linux Foundation
-    resource: https://omnibor.org/spec/
+    resource: https://github.com/omnibor/spec
     last_modified: '2023-04-01T00:00:00Z'
     used_by:
     - standards/identifiers/omnibor
@@ -330,7 +330,7 @@ sources:
     title: OWASP CycloneDX Software Bill of Materials Specification v1.7 (ECMA-424
       2nd Edition)
     author: OWASP Foundation / Ecma International
-    resource: https://cyclonedx.org/specification/overview/
+    resource: https://github.com/CycloneDX/specification
     last_modified: '2025-10-21T00:00:00Z'
     used_by:
     - standards/sbom-formats/cyclonedx-1-7
@@ -386,3 +386,4 @@ sources:
     last_modified: '2023-08-01T00:00:00Z'
     used_by:
     - standards/vex/openvex
+checked_at: '2026-09-27T00:00:00Z'

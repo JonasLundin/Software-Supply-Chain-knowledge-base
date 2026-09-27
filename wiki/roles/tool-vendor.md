@@ -28,14 +28,15 @@ x-software-supply-chain:
 
 # Summary
 
-**Tool vendors** supply the critical development, continuous integration, static analysis, and packaging infrastructure used by producers to build and release software[^nist-sp-800-218].
+A **Tool Vendor** in the software supply chain ecosystem develops and provides software analysis, build orchestration, software composition analysis (SCA), SBOM generation, and cryptographic attestation tooling used by software producers and consumers[^nist-sp-800-218].
 
-# Responsibilities in Supply Chain Integrity
-- **Tool Integrity**: Ensuring developer toolchains are resistant to malicious tampering and dependency confusion.
-- **Standardized Output**: Emitting compliant SBOMs (SPDX, CycloneDX) and attestations (in-toto, SLSA) without proprietary vendor lock-in.
+# Operational Responsibilities and Ecosystem Trust
+
+Because modern automated development pipelines rely directly on tooling to enforce security controls, tool vendors occupy a critical position of trust. Their responsibilities include ensuring the integrity of their own build artifacts, generating standardized and standards-compliant SBOM outputs (such as compliant SPDX and CycloneDX documents), minimizing false-positive rates in vulnerability detection, and supporting automated cryptographic verification mechanisms such as Sigstore and in-toto.
 
 # Related concepts
+- [Software Producer](software-producer.md)
 - [Build Platform](build-platform.md)
-- [Package Registry](package-registry.md)
+- [OWASP SCVS](../standards/frameworks/scvs.md)
 
-[^nist-sp-800-218]: National Institute of Standards and Technology (NIST), NIST SP 800-218: Secure Software Development Framework (SSDF) Version 1.1, https://csrc.nist.gov/publications/detail/sp/800-218/final
+[^nist-sp-800-218]: OWASP Foundation, Software Component Verification Standard (SCVS), https://owasp.org/www-project-software-component-verification-standard/

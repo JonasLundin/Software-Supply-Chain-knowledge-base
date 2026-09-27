@@ -16,7 +16,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: bsi-tr-03183
-  resource: https://www.bsi.bund.de/EN/Themes/Cyber-Security/TR/TR-03183/TR-03183_node.html
+  resource: https://www.bsi.bund.de/dok/TR-03183-en
   title: 'BSI Technical Guideline TR-03183: Cyber Resilience Requirements'
   author: Federal Office for Information Security (BSI)
   last_modified: '2024-05-15T00:00:00Z'
@@ -43,4 +43,4 @@ The **BSI Guidelines for SBOMs** provide detailed engineering recommendations as
 - [BSI TR-03183 Requirements](../../requirements/germany/bsi-tr-03183.md)
 - [Jurisdiction Germany](../../jurisdictions/germany.md)
 
-[^bsi-tr-03183]: Federal Office for Information Security (BSI), BSI Technical Guideline TR-03183: Cyber Resilience Requirements, https://www.bsi.bund.de/EN/Themes/Cyber-Security/TR/TR-03183/TR-03183_node.html
+[^bsi-tr-03183]: Federal Office for Information Security (BSI), BSI Technical Guideline TR-03183: Cyber Resilience Requirements, https://www.bsi.bund.de/dok/TR-03183-en

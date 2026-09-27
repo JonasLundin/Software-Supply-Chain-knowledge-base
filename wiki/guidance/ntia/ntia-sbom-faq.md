@@ -16,7 +16,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: ntia-sbom-faq
-  resource: https://www.ntia.gov/files/ntia/publications/sbom_faq_20210712.pdf
+  resource: https://www.ntia.gov/page/software-bill-materials
   title: Software Bill of Materials (SBOM) Frequently Asked Questions
   author: National Telecommunications and Information Administration (NTIA)
   last_modified: '2021-07-12T00:00:00Z'
@@ -43,4 +43,4 @@ The **NTIA SBOM FAQ** serves as a foundational educational document produced by 
 - [NTIA Minimum Elements (Superseded)](../../requirements/united-states/ntia-minimum-elements.md)
 - [CISA 2026 Minimum Elements](../../requirements/united-states/cisa-minimum-elements-2026.md)
 
-[^ntia-sbom-faq]: National Telecommunications and Information Administration (NTIA), Software Bill of Materials (SBOM) Frequently Asked Questions, https://www.ntia.gov/files/ntia/publications/sbom_faq_20210712.pdf
+[^ntia-sbom-faq]: National Telecommunications and Information Administration (NTIA), Software Bill of Materials (SBOM) Frequently Asked Questions, https://www.ntia.gov/page/software-bill-materials

@@ -34,10 +34,10 @@ Published in February 2022, **NIST Special Publication 800-218 (SSDF v1.1)** pro
 **Binding / contractual / guidance**: Federal guidance incorporated as mandatory contractual conditions for federal agency procurement via OMB Memoranda M-22-18 and M-23-16.
 
 # Four Practice Groups
-1. **Prepare the Organization (PO)**: Ensure people, processes, and technology are prepared to perform secure software development (e.g., PO.1 policies, PO.5 secure software architectures).
+1. **Prepare the Organization (PO)**: Ensure people, processes, and technology are prepared to perform secure software development (e.g., PO.1 policies, PO.5 implement and maintain secure development environments).
 2. **Protect Software (PS)**: Safeguard all software components from tampering and unauthorized access (e.g., PS.1 integrity protection, PS.2 provenance verification).
-3. **Produce Well-Secured Software (PW)**: Produce software with minimal security defects (e.g., PW.1 architecture design, PW.8 automated testing, PW.9 supply chain risk management).
-4. **Respond to Vulnerabilities (RV)**: Identify residual vulnerabilities and remediate them in a timely fashion (e.g., RV.1 vulnerability monitoring, RV.3 post-release remediation).
+3. **Produce Well-Secured Software (PW)**: Produce software with minimal security defects (e.g., PW.1 architecture design, PW.8 automated testing, PW.9 configure software to have secure settings by default).
+4. **Respond to Vulnerabilities (RV)**: Identify residual vulnerabilities and remediate them in a timely fashion (e.g., RV.1 vulnerability monitoring, RV.3 remediate vulnerabilities).
 
 *(Note: NIST SP 800-218A supplements the framework with community profiles for government and open-source ecosystems).*
 

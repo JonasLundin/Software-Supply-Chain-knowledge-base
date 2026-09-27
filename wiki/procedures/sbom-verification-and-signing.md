@@ -18,7 +18,7 @@ generated:
 stale_after: '2027-12-31T00:00:00Z'
 sources:
 - id: slsa-framework
-  resource: https://slsa.dev/spec/v1.0/
+  resource: https://slsa.dev/
   title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
   author: OpenSSF SLSA Working Group
   last_modified: '2023-04-18T00:00:00Z'
@@ -174,4 +174,4 @@ spec:
 - [Build Platform Role](../roles/build-platform.md)
 - [Software Producer Role](../roles/software-producer.md)
 
-[^slsa-framework]: OpenSSF SLSA Working Group, Supply chain Levels for Software Artifacts (SLSA) Specification v1.0, https://slsa.dev/spec/v1.0/
+[^slsa-framework]: OpenSSF SLSA Working Group, Supply chain Levels for Software Artifacts (SLSA) Specification v1.0, https://slsa.dev/

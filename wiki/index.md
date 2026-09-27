@@ -4,6 +4,8 @@ okf_version: '0.2'
 
 # Software Supply Chain Knowledge Base
 
+> **General orientation only:** do not rely on this knowledge base for decisions that determine, demonstrate, or materially affect legal or regulatory compliance. Verify the current primary sources and obtain qualified professional advice.
+
 Welcome to the **Software Supply Chain Knowledge Base**, a structured, open knowledge repository covering software supply chain integrity, SBOM specifications, attestation and provenance frameworks, vulnerability disclosure and VEX, package identifiers, and regulatory baselines.
 
 ## Knowledge Base Sections

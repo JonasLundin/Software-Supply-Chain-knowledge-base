@@ -15,7 +15,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: nist-cpe-spec
-  resource: https://csrc.nist.gov/projects/cpe
+  resource: https://nvd.nist.gov/products/cpe
   title: 'Common Platform Enumeration: Dictionary and Specifications (CPE 2.3)'
   author: National Institute of Standards and Technology (NIST)
   last_modified: '2023-01-01T00:00:00Z'
@@ -39,4 +39,4 @@ x-software-supply-chain:
 - [Package URL](package-url.md)
 - [Software Heritage ID (SWHID)](swhid.md)
 
-[^nist-cpe-spec]: National Institute of Standards and Technology (NIST), Common Platform Enumeration: Dictionary and Specifications (CPE 2.3), https://csrc.nist.gov/projects/cpe
+[^nist-cpe-spec]: National Institute of Standards and Technology (NIST), Common Platform Enumeration: Dictionary and Specifications (CPE 2.3), https://nvd.nist.gov/products/cpe

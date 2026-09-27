@@ -16,7 +16,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: ncsc-supply-chain-principles
-  resource: https://www.ncsc.gov/collection/supply-chain-security
+  resource: https://www.ncsc.gov.uk/collection/supply-chain-security
   title: Supply Chain Security Guidance
   author: National Cyber Security Centre (NCSC)
   last_modified: '2023-01-26T00:00:00Z'
@@ -44,4 +44,4 @@ Published by the UK National Cyber Security Centre (NCSC), the **Supply Chain Se
 - [UK Software Security Code of Practice](uk-software-security-code-of-practice.md)
 - [Jurisdiction United Kingdom](../../jurisdictions/united-kingdom.md)
 
-[^ncsc-supply-chain-principles]: National Cyber Security Centre (NCSC), Supply Chain Security Guidance, https://www.ncsc.gov/collection/supply-chain-security
+[^ncsc-supply-chain-principles]: National Cyber Security Centre (NCSC), Supply Chain Security Guidance, https://www.ncsc.gov.uk/collection/supply-chain-security

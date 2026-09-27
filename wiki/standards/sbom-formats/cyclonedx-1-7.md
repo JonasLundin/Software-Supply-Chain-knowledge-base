@@ -16,7 +16,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: cyclonedx-1-7-spec
-  resource: https://cyclonedx.org/specification/overview/
+  resource: https://github.com/CycloneDX/specification
   title: OWASP CycloneDX Software Bill of Materials Specification v1.7 (ECMA-424 2nd
     Edition)
   author: OWASP Foundation / Ecma International
@@ -47,4 +47,4 @@ OWASP CycloneDX is an open standard licensed under the Apache License 2.0. ECMA-
 - [CycloneDX VEX](../vex/cyclonedx-vex.md)
 - [CISA 2026 Minimum Elements](../../requirements/united-states/cisa-minimum-elements-2026.md)
 
-[^cyclonedx-1-7-spec]: OWASP Foundation / Ecma International, OWASP CycloneDX Software Bill of Materials Specification v1.7 (ECMA-424 2nd Edition), https://cyclonedx.org/specification/overview/
+[^cyclonedx-1-7-spec]: OWASP Foundation / Ecma International, OWASP CycloneDX Software Bill of Materials Specification v1.7 (ECMA-424 2nd Edition), https://github.com/CycloneDX/specification

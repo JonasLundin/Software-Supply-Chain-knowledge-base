@@ -16,7 +16,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: omnibor-spec
-  resource: https://omnibor.org/spec/
+  resource: https://github.com/omnibor/spec
   title: OmniBOR Specification
   author: OmniBOR Community / Linux Foundation
   last_modified: '2023-04-01T00:00:00Z'
@@ -39,4 +39,4 @@ x-software-supply-chain:
 - [Software Heritage ID (SWHID)](swhid.md)
 - [Package URL](package-url.md)
 
-[^omnibor-spec]: OmniBOR Community / Linux Foundation, OmniBOR Specification, https://omnibor.org/spec/
+[^omnibor-spec]: OmniBOR Community / Linux Foundation, OmniBOR Specification, https://github.com/omnibor/spec

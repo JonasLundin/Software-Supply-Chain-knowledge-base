@@ -16,7 +16,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: cisa-self-attestation-form
-  resource: https://www.cisa.gov/secure-software-development-attestation-form
+  resource: https://www.cisa.gov/resources-tools/resources/secure-software-development-attestation-form
   title: CISA Secure Software Development Self-Attestation Form
   author: Cybersecurity and Infrastructure Security Agency (CISA)
   last_modified: '2024-03-11T00:00:00Z'
@@ -44,4 +44,4 @@ Producers must attest under signature of a corporate officer that software was d
 - [SSDF NIST SP 800-218](ssdf-nist-sp-800-218.md)
 - [EO 14028](../../law/united-states/eo-14028.md)
 
-[^cisa-self-attestation-form]: Cybersecurity and Infrastructure Security Agency (CISA), CISA Secure Software Development Self-Attestation Form, https://www.cisa.gov/secure-software-development-attestation-form
+[^cisa-self-attestation-form]: Cybersecurity and Infrastructure Security Agency (CISA), CISA Secure Software Development Self-Attestation Form, https://www.cisa.gov/resources-tools/resources/secure-software-development-attestation-form

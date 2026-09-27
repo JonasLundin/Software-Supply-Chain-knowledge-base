@@ -16,7 +16,7 @@ generated:
 stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: cisa-sbom-sharing
-  resource: https://www.cisa.gov/resources-tools/resources/software-bill-materials-sharing-considerations
+  resource: https://www.cisa.gov/sbom
   title: Software Bill of Materials Sharing Considerations
   author: Cybersecurity and Infrastructure Security Agency (CISA)
   last_modified: '2023-04-01T00:00:00Z'
@@ -40,4 +40,4 @@ x-software-supply-chain:
 - [SBOM Generation at Build](sbom-generation-at-build.md)
 - [CISA SBOM Sharing Guidance](../guidance/cisa/cisa-sbom-sharing-guidance.md)
 
-[^cisa-sbom-sharing]: Cybersecurity and Infrastructure Security Agency (CISA), Software Bill of Materials Sharing Considerations, https://www.cisa.gov/resources-tools/resources/software-bill-materials-sharing-considerations
+[^cisa-sbom-sharing]: Cybersecurity and Infrastructure Security Agency (CISA), Software Bill of Materials Sharing Considerations, https://www.cisa.gov/sbom

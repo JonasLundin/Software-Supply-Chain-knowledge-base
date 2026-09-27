@@ -1,7 +1,7 @@
 ---
 type: Glossary
 title: Open-Source Software Steward
-description: Statutory term defined in Cyber Resilience Act Article 3(23) for legal
+description: Statutory term defined in Cyber Resilience Act Article 3(14) for legal
   persons providing sustained support for open-source development.
 category: glossary
 tags:
@@ -24,13 +24,13 @@ x-software-supply-chain:
   jurisdiction: EU
   authority_level: statutory
   instrument_status: in_force
-  provision: CRA Article 3(23)
+  provision: CRA Article 3(14)
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Definition
 
-Under Article 3(23) of the Cyber Resilience Act, an **open-source software steward** means any legal person, other than a manufacturer, whose purpose or objective is to systematically provide sustained support for the development of specific open-source products with digital elements intended for commercial activities[^eu-cra-regulation].
+Under Article 3(14) of the Cyber Resilience Act, an **open-source software steward** means any legal person, other than a manufacturer, whose purpose or objective is to systematically provide sustained support for the development of specific open-source products with digital elements intended for commercial activities[^eu-cra-regulation].
 
 # Context
 Stewards are subject to a tailored, light-touch due diligence regime under Article 24 requiring documented cybersecurity policies without imposing commercial manufacturer liabilities.
