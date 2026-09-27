@@ -1,20 +1,19 @@
 ---
 type: Jurisdiction
-title: 'Jurisdiction: European Union'
-description: European regulatory regime mandating horizontal SBOM inventories, vulnerability
-  handling, and supply chain security under the CRA and NIS2.
+title: European Union Software Supply Chain Framework
+description: Statutory cybersecurity framework in the European Union established by
+  the Cyber Resilience Act and NIS2 Directive.
 category: jurisdiction
 tags:
-- supply-chain
 - jurisdiction
 - eu
 - cra
 - nis2
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
 - id: eu-cra-regulation
   resource: http://data.europa.eu/eli/reg/2024/2847/oj
@@ -22,35 +21,31 @@ sources:
     with digital elements (Cyber Resilience Act)
   author: European Parliament and Council of the European Union
   last_modified: '2024-11-20T00:00:00Z'
+- id: eu-nis2-directive
+  resource: http://data.europa.eu/eli/dir/2022/2555/oj
+  title: Directive (EU) 2022/2555 on measures for a high common level of cybersecurity
+    across the Union (NIS2)
+  author: European Parliament and Council of the European Union
+  last_modified: '2022-12-14T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: European Union
-  authority_level: guidance
+  jurisdiction: EU
+  authority_level: statutory
   instrument_status: in_force
-  provision: Regulation (EU) 2024/2847, Directive (EU) 2022/2555
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-The **European Union** has established the world's most legally binding and comprehensive horizontal supply-chain cybersecurity framework through the **Cyber Resilience Act (Regulation (EU) 2024/2847)** and the **NIS2 Directive (Directive (EU) 2022/2555)**[^eu-cra-regulation].
+The **European Union** enforces binding horizontal legislation governing software supply chain integrity through the Cyber Resilience Act (Regulation (EU) 2024/2847) and the NIS2 Directive (Directive (EU) 2022/2555)[^eu-cra-regulation][^eu-nis2-directive].
 
-# Legislative Landscape
-
-### 1. Cyber Resilience Act (CRA)
-- **Mandatory Component Inventory**: Annex I Section 2(1) obligates manufacturers of all products with digital elements to maintain an inventory of components, including automated software bills of materials.
-- **Duty of Care**: Manufacturers must identify and document vulnerabilities, continuously assess third-party components, and deploy automated security patches.
-- **Open-Source Protections**: Recognizes open-source software stewards under a specialized, proportionate regime (Article 24).
-
-### 2. NIS2 Directive
-- **Article 21(2)(d)**: Mandates essential and important entities across 18 critical sectors to manage cybersecurity risks throughout their supply chains and supplier relationships.
-
-# Enforcement & Timelines
-- CRA vulnerability reporting obligations apply from **11 September 2026**.
-- Full CRA product conformity, CE marking, and SBOM inventory requirements apply from **11 December 2027**.
+# Key Regulatory Requirements
+- **Mandatory SBOM Generation**: CRA Annex I Part II(1) mandates machine-readable SBOMs for all products with digital elements made available on the EU single market.
+- **Upstream Vulnerability Remediation**: CRA Article 13(6) requires manufacturers to report flaws in third-party components to maintainers.
+- **Critical Infrastructure Due Diligence**: NIS2 Article 21(2)(d) requires essential and important entities to assess and mitigate risks arising from direct ICT suppliers.
 
 # Related concepts
-- [CRA Component Inventory & Vulnerability Identification](../requirements/european-union/cra-sbom-mandate.md)
-- [Cyber Resilience Act: Supply Chain Provisions](../law/eu/cra-supply-chain.md)
-- [NIS2 Article 21(2)(d): Supply Chain Risk Management](../law/eu/nis2-article-21-supply-chain.md)
+- [CRA Supply Chain](../law/eu/cra-supply-chain.md)
+- [NIS2 Supply Chain](../law/eu/nis2-article-21-supply-chain.md)
 
 [^eu-cra-regulation]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^eu-nis2-directive]: European Parliament and Council of the European Union, Directive (EU) 2022/2555 on measures for a high common level of cybersecurity across the Union (NIS2), http://data.europa.eu/eli/dir/2022/2555/oj

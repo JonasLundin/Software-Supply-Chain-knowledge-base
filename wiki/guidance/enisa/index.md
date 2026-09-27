@@ -1,7 +1,3 @@
-# ENISA
+# ENISA Guidance
 
-Supply-chain security reports and CRA-related guidance.
-
-## Concepts
-
-- [ENISA Guidelines for Securing the Supply Chain](enisa-supply-chain-guidance.md) — European Union Agency for Cybersecurity guidance on assessing and managing ICT supplier risks.
+- [ENISA Supply Chain Threat Landscape](enisa-supply-chain-guidance.md): Threat analysis and mitigation guidance.

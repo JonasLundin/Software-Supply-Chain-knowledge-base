@@ -1,28 +1,27 @@
 ---
-type: Concept
-title: BSI Guidelines on Software Bill of Materials Creation
-description: Practical guidance from the German Federal Office for Information Security
-  on SBOM generation and vulnerability handling.
+type: Guidance
+title: BSI Recommendations for Software Bill of Materials (SBOM) Generation and Usage
+description: Technical guidance from Germany's Federal Office for Information Security
+  on SBOM lifecycle management.
 category: guidance
 tags:
-- software-supply-chain
 - guidance
 - bsi
 - sbom
+- germany
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: regulation-eu-2024-2847
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
-  author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+- id: bsi-tr-03183
+  resource: https://www.bsi.bund.de/dok/TR-03183-en
+  title: 'BSI Technical Guideline TR-03183: Cyber Resilience Requirements'
+  author: Federal Office for Information Security (BSI)
+  last_modified: '2024-05-15T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: International
+  jurisdiction: DE
   authority_level: guidance
   instrument_status: in_force
   checked_at: '2026-09-27T00:00:00Z'
@@ -30,10 +29,18 @@ x-software-supply-chain:
 
 # Summary
 
-The German Federal Office for Information Security (**BSI**) provides technical instructions and implementation patterns for generating SBOMs during automated CI/CD builds[^regulation-eu-2024-2847].
+The **BSI Guidelines for SBOMs** provide detailed engineering recommendations assisting organizations in implementing BSI TR-03183 Part 2 requirements across the software development lifecycle[^bsi-tr-03183].
+
+> [!NOTE]
+> **Non-Binding Guidance**: This publication provides advisory good practices to facilitate compliance with binding technical rules.
+
+# Recommended Practices
+1. **Automated Continuous Generation**: Generate SBOMs automatically within the CI/CD build pipeline rather than relying on retrospective manual scanning.
+2. **Standard Format Utilization**: Mandates the use of standardized machine-readable formats, specifically SPDX 2.3/3.0 and CycloneDX 1.6/1.7.
+3. **Completeness and Depth**: Advises organizations to catalog all direct and transitive runtime dependencies, recording cryptographic file digests and supplier origins.
 
 # Related concepts
-- [BSI Guidance Index](index.md)
-- [SBOM Generation at Build](../../procedures/sbom-generation-at-build.md)
+- [BSI TR-03183 Requirements](../../requirements/germany/bsi-tr-03183.md)
+- [Jurisdiction Germany](../../jurisdictions/germany.md)
 
-[^regulation-eu-2024-2847]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^bsi-tr-03183]: Federal Office for Information Security (BSI), BSI Technical Guideline TR-03183: Cyber Resilience Requirements, https://www.bsi.bund.de/dok/TR-03183-en

@@ -1,26 +1,24 @@
 ---
-type: Concept
+type: Standard
 title: Package URL (purl) Specification
 description: Standardized URI specification to identify and locate software packages
   across package managers and programming languages.
 category: standard
 tags:
-- software-supply-chain
-- standards
-- identifiers
+- standard
+- identifier
 - purl
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: regulation-eu-2024-2847
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
-  author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+- id: package-url-spec
+  resource: https://github.com/package-url/purl-spec
+  title: Package URL (purl) Specification
+  author: Package URL Community
+  last_modified: '2024-01-01T00:00:00Z'
 x-software-supply-chain:
   jurisdiction: International
   authority_level: standard
@@ -30,17 +28,26 @@ x-software-supply-chain:
 
 # Summary
 
-A **Package URL (purl)** is a standardized string format used to reliably identify and locate software packages across ecosystems (e.g., maven, npm, pypi, cargo, deb, rpm)[^regulation-eu-2024-2847].
+A **Package URL (purl)** is a standardized string format used to reliably identify and locate software packages across programming languages, package managers, and operating system distributions[^package-url-spec].
 
-# Syntax Schema
+# Syntax Structure
 `pkg:type/namespace/name@version?qualifiers#subpath`
+- **`type`**: The package manager or ecosystem (e.g., `maven`, `npm`, `pypi`, `cargo`, `golang`, `deb`, `rpm`).
+- **`namespace`**: Optional vendor, organization, or group prefix (e.g., `@angular`, `org.apache.commons`).
+- **`name`**: The canonical package name.
+- **`version`**: The package version string or commit.
+- **`qualifiers`**: Optional key-value query parameters (e.g., repository URL, architecture).
+- **`subpath`**: Optional relative path within the package.
 
 # Operational Value
-- Enables deterministic vulnerability matching against CVE, OSV, and GitHub advisory databases.
-- Essential mandatory component identifier in CycloneDX and SPDX 3.0.
+- Enables deterministic vulnerability matching across CVE, OSV, and vulnerability databases.
+- Serves as the primary standardized component identifier across CycloneDX, SPDX 2.3, and SPDX 3.0.
+
+# Intellectual Property and Licensing
+The Package URL specification is an open specification published under the MIT License.
 
 # Related concepts
-- [Identifiers Index](index.md)
-- [Package URL Glossary](../../glossary/package-url.md)
+- [Common Platform Enumeration (CPE)](cpe.md)
+- [Software Heritage ID (SWHID)](swhid.md)
 
-[^regulation-eu-2024-2847]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^package-url-spec]: Package URL Community, Package URL (purl) Specification, https://github.com/package-url/purl-spec

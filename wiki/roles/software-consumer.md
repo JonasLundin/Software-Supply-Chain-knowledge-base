@@ -1,6 +1,6 @@
 ---
 type: Role
-title: 'Role: Software Consumer / Deployer'
+title: "Role: Software Consumer / Deployer"
 description: Enterprise, public administration, or downstream organization acquiring,
   evaluating, and operating software products.
 category: role

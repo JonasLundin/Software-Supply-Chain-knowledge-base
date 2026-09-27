@@ -29,12 +29,15 @@ x-software-supply-chain:
 
 # Definition
 
-**Vulnerability Exploitability eXchange (VEX)**: A machine-readable assertion communicating whether a product is actually affected by a specific vulnerability.[^ntia-sbom-elements]
+**Vulnerability Exploitability eXchange (VEX)** is a machine-readable security advisory format that asserts the actual exploitability status of specific vulnerabilities within a software product or component[^ntia-sbom-elements].
 
-# Context
-Standard industry terminology defined in foundational supply chain specifications.
+# Role in Noise Reduction
+
+While an SBOM reveals the presence of a third-party component, automated vulnerability scanners often flag components as vulnerable even when the vulnerable code path is never executed, uncalled, or mitigated by compiler flags. VEX solves this false-positive overload by allowing software producers to publish authoritative assertions—such as `not_affected`, `affected`, `fixed`, or `under_investigation`—allowing consumers to prioritize immediate threats and avoid investigating non-exploitable findings.
 
 # Related concepts
 - [Glossary Index](index.md)
+- [OpenVEX Standard](../standards/vex/openvex.md)
+- [CSAF VEX Standard](../standards/vex/csaf-vex.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^ntia-sbom-elements]: OpenVEX Working Group, OpenVEX Specification, https://github.com/openvex/spec

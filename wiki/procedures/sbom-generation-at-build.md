@@ -1,26 +1,27 @@
 ---
 type: Procedure
 title: Automated SBOM Generation in Build Pipelines
-description: Comprehensive engineering procedure for integrating automated, high-fidelity Software Bill of Materials generation into CI/CD build environments.
+description: Comprehensive engineering procedure for integrating automated, high-fidelity
+  Software Bill of Materials generation into CI/CD build environments.
 category: procedure
 tags:
-  - sbom
-  - ci-cd
-  - build-pipeline
-  - cyclonedx
-  - spdx
-  - procedure
+- sbom
+- ci-cd
+- build-pipeline
+- cyclonedx
+- spdx
+- procedure
 status: draft
 generated:
   by: agent:kb-researcher-writer
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-  - id: cyclonedx-specification
-    resource: https://cyclonedx.org/specification/overview/
-    title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
-    author: OWASP Foundation / Ecma International
-    last_modified: '2024-05-01T00:00:00Z'
+- id: cyclonedx-specification
+  resource: https://cyclonedx.org/specification/overview/
+  title: OWASP CycloneDX Software Bill of Materials Standard (ECMA-424)
+  author: OWASP Foundation / Ecma International
+  last_modified: '2024-05-01T00:00:00Z'
 x-software-supply-chain:
   jurisdiction: International
   authority_level: standard
@@ -204,7 +205,7 @@ jobs:
 # Related concepts
 
 - [OWASP CycloneDX 1.6 (ECMA-424)](../standards/sbom-formats/cyclonedx-1-6.md)
-- [SPDX 2.3 (ISO/IEC 5962:2021)](../standards/sbom-formats/spdx-2-3.md)
+- [SPDX 2.3](../standards/sbom-formats/spdx-2-3.md)
 - [SBOM Verification and Signing](sbom-verification-and-signing.md)
 - [CRA SBOM Mandate](../requirements/european-union/cra-sbom-mandate.md)
 - [NTIA Minimum Elements](../requirements/united-states/ntia-minimum-elements.md)
