@@ -1,7 +1,4 @@
-# National cyber security centres
+# NCSC Guidance
 
-NCSC-UK, NCSC-NL and other national guidance.
-
-## Concepts
-
-- [NCSC Principles for Supply Chain Security](ncsc-supply-chain-principles.md) — UK National Cyber Security Centre 12 principles for managing supply chain cybersecurity risks.
+- [NCSC Supply Chain Security Principles](ncsc-supply-chain-principles.md): Twelve principles across four stages.
+- [UK Software Security Code of Practice](uk-software-security-code-of-practice.md): Government code of practice for software vendors.

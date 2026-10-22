@@ -1,11 +1,11 @@
-# Standards
+# Supply Chain Standards
 
-Specifications and frameworks, recorded as identifiers, versions, scope, relationships and links.
+Specifications, data formats, and frameworks governing software supply chain security.
 
-## Sections
+## Subsections
 
-- [Attestation and provenance](attestation-and-provenance/index.md) — in-toto, SLSA 1.2, DSSE, Sigstore (Fulcio, Rekor, cosign), SCITT, build provenance predicates.
-- [Frameworks](frameworks/index.md) — NIST SSDF (SP 800-218), SP 800-161r1, OpenSSF Scorecard and best-practice badges, S2C2F, OWASP SCVS.
-- [Identifiers](identifiers/index.md) — Package URL, CPE, SWHID, OmniBOR, hashes and how formats reference them.
-- [SBOM formats](sbom-formats/index.md) — SPDX 3.0 and 2.3, CycloneDX 1.7 and ECMA-424, SWID and CoSWID, conversion and profiles.
-- [VEX](vex/index.md) — OpenVEX, CSAF VEX, CycloneDX VEX, status vocabulary, minimum requirements.
+- [SBOM Formats](sbom-formats/index.md): Software Bill of Materials exchange formats (CycloneDX, SPDX, SWID).
+- [Attestation and Provenance](attestation-and-provenance/index.md): Build integrity, provenance attestations, and signing systems (SLSA, in-toto, Sigstore, DSSE, SCITT).
+- [Vulnerability Exploitability eXchange (VEX)](vex/index.md): Machine-readable vulnerability status feeds (CSAF VEX, OpenVEX, CycloneDX VEX).
+- [Identifiers](identifiers/index.md): Canonical package and artifact identification schemes (Package URL, CPE, SWHID, OmniBOR).
+- [Frameworks](frameworks/index.md): Software security and supply chain risk management frameworks (SSDF, NIST SP 800-161r1, OpenSSF Scorecard, S2C2F, SCVS).

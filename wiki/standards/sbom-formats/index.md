@@ -1,10 +1,13 @@
-# SBOM formats
+# Software Bill of Materials (SBOM) Formats
 
-SPDX 3.0 and 2.3, CycloneDX 1.7 and ECMA-424, SWID and CoSWID, conversion and profiles.
+Machine-readable specifications for software composition, licensing, and dependencies.
 
 ## Concepts
 
-- [OWASP CycloneDX 1.5 Specification](cyclonedx-1-5.md) — Full-spectrum Bill of Materials standard providing advanced support for software, cloud services (SaaSBOM), operations (OBOM), and integrated VEX disclosures.
-- [OWASP CycloneDX 1.6 Specification (ECMA-424)](cyclonedx-1-6.md) — Ecma International standard (ECMA-424) introducing Cryptographic Bill of Materials (CBOM), AI model cards, and CycloneDX Attestations (CDXA).
-- [SPDX 2.3 (ISO/IEC 5962:2021)](spdx-2-3.md) — International standard format (ISO/IEC 5962:2021) for exchanging software package data, component provenance, licensing metadata, and security references.
-- [SPDX 3.0 Specification](spdx-3-0.md) — Next-generation modular graph-based specification for software, AI models, hardware, datasets, security attestations, and VEX statements.
+- [CycloneDX 1.7](cyclonedx-1-7.md): Current release and ECMA-424 2nd Edition.
+- [CycloneDX 1.6](cyclonedx-1-6.md): ECMA-424 1st Edition (Superseded).
+- [CycloneDX 1.5](cyclonedx-1-5.md): Legacy release (Superseded).
+- [SPDX 2.3](spdx-2-3.md): Software Package Data Exchange version 2.3.
+- [SPDX 3.0](spdx-3-0.md): Modern modular model covering AI, security, and datasets.
+- [ISO/IEC 5962:2021](iso-iec-5962.md): International standard adopting SPDX 2.2.1.
+- [SWID and CoSWID](swid-coswid.md): Software Identification tags (ISO/IEC 19770-2 / RFC 9393).

@@ -1,7 +1,7 @@
-# Germany
+# Germany Requirements
 
-BSI TR-03183 Part 2 SBOM requirements and transition rules.
+National cybersecurity requirements established by the Federal Office for Information Security (BSI).
 
 ## Concepts
 
-- [BSI TR-03183 Cyber Resilience Requirements for SBOM](bsi-tr-03183.md) — Technical guideline from the German Federal Office for Information Security specifying requirements for SBOM creation and exchange.
+- [BSI TR-03183](bsi-tr-03183.md): Technical Guideline for Cyber Resilience and SBOMs.

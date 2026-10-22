@@ -1,27 +1,25 @@
 ---
-type: Concept
-title: OpenSSF Scorecard and Best Practices Guidelines
-description: Open Source Security Foundation automated tooling and badge criteria
-  for open-source package security health.
+type: Guidance
+title: OpenSSF Best Practices and Scorecard Implementation Guide
+description: Practical recommendations from the OpenSSF for securing open-source development
+  workflows and continuous integration pipelines.
 category: guidance
 tags:
-- software-supply-chain
 - guidance
 - openssf
 - scorecard
-- oss
+- best-practices
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: regulation-eu-2024-2847
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
-  author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+- id: openssf-best-practices
+  resource: https://bestpractices.coreinfrastructure.org/
+  title: OpenSSF Best Practices Badge Program
+  author: Open Source Security Foundation (OpenSSF)
+  last_modified: '2023-11-01T00:00:00Z'
 x-software-supply-chain:
   jurisdiction: International
   authority_level: guidance
@@ -31,15 +29,18 @@ x-software-supply-chain:
 
 # Summary
 
-The **Open Source Security Foundation (OpenSSF)** provides automated security metrics and best practice badges to evaluate open-source dependency health[^regulation-eu-2024-2847].
+The **OpenSSF Best Practices Guide** provides practical guidelines for open-source maintainers and corporate development teams to enhance project security and automate supply chain protection[^openssf-best-practices].
 
-# Automated Security Checks
-- Verification of binary artifacts in source repositories.
-- Code review, branch protection, and signed commit enforcement.
-- Automated static code analysis and dependency pinning.
+> [!NOTE]
+> **Community Guidance**: Voluntary industry recommendations published by the Open Source Security Foundation.
+
+# Implementation Milestones
+- **CI/CD Hardening**: Pinning GitHub Actions and pipeline dependencies by immutable full-length commit SHA rather than mutable tags.
+- **Automated Scorecard Integration**: Running OpenSSF Scorecard in daily continuous integration to track regression in security controls.
+- **Security Policy Publication**: Maintaining a clear `SECURITY.md` file establishing coordinated vulnerability reporting instructions.
 
 # Related concepts
-- [OpenSSF Guidance Index](index.md)
-- [Dependency Due Diligence](../../procedures/dependency-due-diligence.md)
+- [OpenSSF Scorecard Framework](../../standards/frameworks/openssf-scorecard.md)
+- [S2C2F Framework](../../standards/frameworks/s2c2f.md)
 
-[^regulation-eu-2024-2847]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^openssf-best-practices]: Open Source Security Foundation (OpenSSF), OpenSSF Best Practices Badge Program, https://bestpractices.coreinfrastructure.org/

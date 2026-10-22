@@ -29,11 +29,15 @@ x-software-supply-chain:
 
 # Summary
 
-**Executive Order 14028 Signing** in software supply chain history[^ntia-sbom-elements].
+**12 May 2021**: President Biden signs **Executive Order 14028** on *Improving the Nation's Cybersecurity*[^ntia-sbom-elements], initiating modern federal software supply chain integrity mandates.
 
-US Presidential directive initiating federal SBOM and software supply chain security standards on 12 May 2021.
+# Policy Impact and Requirements
+
+Section 4 of EO 14028 directed the National Institute of Standards and Technology (NIST) to issue guidelines enhancing software supply chain security, culminating in NIST SP 800-218 (Secure Software Development Framework). It instructed the National Telecommunications and Information Administration (NTIA) to publish minimum elements for Software Bills of Materials (SBOMs), establishing baseline federal expectations for provenance tracking, build environment security, and automated vulnerability remediation.
 
 # Related concepts
 - [Timeline Index](index.md)
+- [Executive Order 14028 Summary](../law/united-states/eo-14028.md)
+- [NTIA Minimum Elements Publication](ntia-minimum-elements-publication.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^ntia-sbom-elements]: Executive Office of the President, Executive Order 14028 of May 12, 2021, Improving the Nation's Cybersecurity, https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity

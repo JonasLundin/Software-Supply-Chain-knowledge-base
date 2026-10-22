@@ -1,10 +1,13 @@
 # Glossary
 
-Terms as defined by the specifications and by CRA Article 3.
+Definitions of core legal and technical concepts across software supply chain security.
 
-## Concepts
+## Terms
 
-- [Package URL (purl)](package-url.md) — A standardized, universal format for identifying software packages across programming languages, ecosystems, and package managers.
-- [Software Provenance](provenance.md) — Verifiable, tamper-evident metadata documenting where, when, how, and by whom a software artifact was generated.
-- [Software Bill of Materials (SBOM)](software-bill-of-materials.md) — A formal, machine-readable inventory of software components, dependencies, metadata, and hierarchical relationships.
-- [Vulnerability Exploitability eXchange (VEX)](vex.md) — A machine-readable assertion communicating whether a product is actually affected by a specific vulnerability.
+- [Software Bill of Materials (SBOM)](software-bill-of-materials.md): Structured component inventory.
+- [Product with Digital Elements (PDE)](product-with-digital-elements.md): CRA Article 3(1) scope.
+- [Software Component](component.md): Functional unit of software under CRA Article 3(6).
+- [Vulnerability](vulnerability.md): Security weakness under CRA Article 3(40).
+- [Open-Source Software Steward](open-source-software-steward.md): Organization under CRA Article 3(14).
+- [Provenance](provenance.md): Cryptographic attestation of artifact build lineage.
+- [Vulnerability Exploitability eXchange (VEX)](vex.md): Exploitation status assertion.

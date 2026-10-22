@@ -1,6 +1,6 @@
 ---
 type: Role
-title: 'Role: Software Producer'
+title: "Role: Software Producer"
 description: Primary entity designing, compiling, assembling, and distributing commercial
   or proprietary software products.
 category: role

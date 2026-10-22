@@ -1,6 +1,6 @@
 ---
 type: Role
-title: 'Role: Open-Source Software Steward'
+title: "Role: Open-Source Software Steward"
 description: Legal person or foundation providing sustained support, infrastructure,
   and governance for open-source digital products.
 category: role
@@ -26,7 +26,7 @@ x-software-supply-chain:
   jurisdiction: International
   authority_level: guidance
   instrument_status: in_force
-  provision: CRA Article 3(15), Article 24
+  provision: CRA Article 3(14), Article 24
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
@@ -38,11 +38,11 @@ Introduced explicitly in Regulation (EU) 2024/2847 (CRA), this distinct regulato
 
 # Legal Framework & Lightweight Obligations
 
-Unlike commercial manufacturers, open-source stewards do not place products on the market for profit and are subject to lightweight, tailored requirements under CRA Article 24:
-- **Cybersecurity Policy**: Must put in place a cybersecurity policy to foster development of secure products.
-- **Coordinated Vulnerability Disclosure**: Must establish a public CVD policy and intake mechanism for vulnerability handling.
-- **Cooperation**: Must cooperate with market surveillance authorities upon request to provide relevant non-confidential information.
-- **Exemption from Conformity Assessment**: Stewards are exempt from third-party conformity assessment, CE marking, and product liability regimes.
+Unlike commercial manufacturers who place products on the market in the course of commercial activities, open-source software stewards are subject to a tailored, proportionate regulatory regime under CRA Article 24:
+- **Cybersecurity Policy (Art 24(1))**: Stewards must establish and verify the implementation of a cybersecurity policy to foster the development of secure products with digital elements.
+- **Coordinated Vulnerability Disclosure (Art 24(2))**: Stewards must put in place a coordinated vulnerability disclosure policy pursuant to Annex I, Part II, point (1), including designating a clear point of contact for vulnerability reports, facilitating vulnerability remediation, and supporting notification workflows where actively exploited vulnerabilities are identified pursuant to Article 14(1).
+- **Administrative Cooperation (Art 24(3))**: Upon request by national market surveillance authorities, stewards must cooperate and provide documented evidence demonstrating compliance with their Article 24 obligations.
+- **Regulatory Demarcation**: Stewards are exempt from commercial manufacturer obligations, notably conformity assessment procedures under Article 32, technical documentation duties under Article 31, and CE marking under Article 30.
 
 # Supply-Chain Impact
 

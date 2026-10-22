@@ -1,7 +1,7 @@
-# United States
+# United States Law
 
-Executive Order 14028 and implementing memoranda.
+Federal executive orders and statutes governing cybersecurity.
 
 ## Concepts
 
-- [Executive Order 14028 on Improving the Nation's Cybersecurity](eo-14028.md) — Presidential executive order mandating federal SBOM adoption, secure development environments, and NIST SSDF compliance.
+- [Executive Order 14028](eo-14028.md): Improving the Nation's Cybersecurity.

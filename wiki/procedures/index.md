@@ -1,11 +1,14 @@
-# Procedures
+# Supply Chain Security Procedures
 
-Generating SBOMs at build, depth and completeness, distribution and access control, signing and attestation, verification, vulnerability matching, VEX exchange, reproducible builds, provenance verification, dependency due diligence, upstream fix sharing.
+Operational engineering practices for building, verifying, and distributing secure software.
 
 ## Concepts
 
-- [Procedure: Dependency Due Diligence and Governance](dependency-due-diligence.md) — Continuous auditing of open source components for license compliance, malicious code injection, and abandoned maintenance.
-- [Procedure: Reproducible Builds Verification](reproducible-builds.md) — Configuring deterministic compilation to ensure bit-for-bit identical outputs independently verifiable from source.
-- [Automated SBOM Generation in Build Pipelines](sbom-generation-at-build.md) — Comprehensive engineering procedure for integrating automated, high-fidelity Software Bill of Materials generation into CI/CD build environments.
-- [Cryptographic Signing and Integrity Verification of SBOMs](sbom-verification-and-signing.md) — Operational procedure for cryptographically binding Software Bills of Materials to release artifacts and verifying attestation signatures prior to deployment.
-- [Procedure: Vulnerability Correlation and VEX Authoring](vulnerability-matching-and-vex.md) — Ingesting SBOMs, matching package URLs (purl) against CVE feeds, and emitting authoritative VEX statements.
+- [Automated SBOM Generation at Build](sbom-generation-at-build.md): Integrating SBOM creation into CI/CD pipelines.
+- [SBOM Verification and Signing](sbom-verification-and-signing.md): Cryptographically signing and verifying SBOMs.
+- [SBOM Distribution and Access Control](sbom-distribution-and-access-control.md): Customer delivery and authorization controls.
+- [Provenance Verification](provenance-verification.md): Ingestion-time validation of build provenance and builder identity.
+- [Vulnerability Matching and VEX Authoring](vulnerability-matching-and-vex.md): Correlating purls to CVEs and emitting VEX statements.
+- [Reproducible Builds Verification](reproducible-builds.md): Ensuring deterministic bit-for-bit build outputs.
+- [Dependency Due Diligence](dependency-due-diligence.md): Auditing external dependencies for security and health.
+- [Upstream Fix Sharing](upstream-fix-sharing.md): Responsibly coordinating patches with open source maintainers.

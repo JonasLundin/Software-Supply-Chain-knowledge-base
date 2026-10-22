@@ -1,9 +1,8 @@
-# Law
+# Statutory Instruments and Executive Orders
 
-Legal instruments summarised for their supply-chain provisions, with pointers to the sibling bundles for the rest.
+Legal instruments governing software supply chain security.
 
-## Sections
+## Subsections
 
-- [EU law](eu/index.md) — CRA and NIS2 supply-chain provisions (pointers to the CRA and NIS2 bundles).
-- [Other](other/index.md) — Other national instruments with SBOM or provenance duties.
-- [United States](united-states/index.md) — Executive Order 14028 and implementing memoranda.
+- [European Union](eu/index.md): Cyber Resilience Act and NIS2 Directive supply chain provisions.
+- [United States](united-states/index.md): Executive Orders governing federal cybersecurity.

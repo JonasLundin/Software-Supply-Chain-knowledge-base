@@ -1,28 +1,27 @@
 ---
-type: Concept
-title: ENISA Guidelines for Securing the Supply Chain
-description: European Union Agency for Cybersecurity guidance on assessing and managing
-  ICT supplier risks.
+type: Guidance
+title: ENISA Guidelines for Securing the ICT Supply Chain
+description: European Union good practice guidance for managing ICT supplier risk
+  and assessing software supply chain integrity.
 category: guidance
 tags:
-- software-supply-chain
 - guidance
 - enisa
 - supply-chain
+- nis2
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: regulation-eu-2024-2847
-  resource: http://data.europa.eu/eli/reg/2024/2847/oj
-  title: Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products
-    with digital elements (Cyber Resilience Act)
-  author: European Parliament and Council of the European Union
-  last_modified: '2024-11-20T00:00:00Z'
+- id: enisa-supply-chain-report
+  resource: https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks
+  title: ENISA Threat Landscape for Supply Chain Attacks
+  author: European Union Agency for Cybersecurity (ENISA)
+  last_modified: '2021-07-29T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: International
+  jurisdiction: EU
   authority_level: guidance
   instrument_status: in_force
   checked_at: '2026-09-27T00:00:00Z'
@@ -30,14 +29,18 @@ x-software-supply-chain:
 
 # Summary
 
-The European Union Agency for Cybersecurity (**ENISA**) publishes comprehensive threat landscapes and guidance on securing ICT supply chains[^regulation-eu-2024-2847].
+The **ENISA Threat Landscape for Supply Chain Attacks** analyzes attack patterns targeting software suppliers and recommends defense strategies for European public and private entities[^enisa-supply-chain-report].
 
-# Key Recommendations
-- Systematic component tracking and integration into enterprise CMDBs.
-- Continuous assessment of third-party dependencies and build-pipeline integrity.
+> [!NOTE]
+> **Non-Binding EU Guidance**: Provides expert technical analysis to assist Member States and critical entities in implementing NIS2 Article 21 supply chain controls.
+
+# Good Practice Recommendations
+1. **Supplier Relationship Management**: Incorporate cybersecurity clauses, coordinated vulnerability disclosure commitments, and audit rights into procurement contracts.
+2. **Component Integrity Verification**: Maintain inventory of open-source and third-party software components and track known vulnerabilities.
+3. **Separation of Environments**: Isolate development, staging, and production environments to prevent compromised developer credentials from infecting release artifacts.
 
 # Related concepts
-- [ENISA Guidance Index](index.md)
-- [CRA Supply Chain Provisions](../../law/eu/../../law/eu/cra-supply-chain.md)
+- [NIS2 Supply Chain](../../law/eu/nis2-article-21-supply-chain.md)
+- [NIS2 Knowledge Base](https://github.com/JonasLundin/NIS2-knowledge-base)
 
-[^regulation-eu-2024-2847]: European Parliament and Council of the European Union, Regulation (EU) 2024/2847 on horizontal cybersecurity requirements for products with digital elements (Cyber Resilience Act), http://data.europa.eu/eli/reg/2024/2847/oj
+[^enisa-supply-chain-report]: European Union Agency for Cybersecurity (ENISA), ENISA Threat Landscape for Supply Chain Attacks, https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks

@@ -29,11 +29,15 @@ x-software-supply-chain:
 
 # Summary
 
-**NTIA Minimum Elements Publication** in software supply chain history[^ntia-sbom-elements].
+**12 July 2021**: The National Telecommunications and Information Administration (NTIA) publishes the landmark report *The Minimum Elements For a Software Bill of Materials (SBOM)*[^ntia-sbom-elements] pursuant to Executive Order 14028.
 
-Publication of the baseline data fields required for software bills of materials on 12 July 2021.
+# Foundational Baseline Framework
+
+The publication defined the global consensus baseline for machine-readable SBOM generation across three interrelated categories: Data Fields (author name, supplier name, component name, version string, other unique identifiers, dependency relationship, and timestamp), Operational Considerations (frequency, depth, known unknowns, and delivery mechanisms), and Automation Support (mandating standard formats SPDX, CycloneDX, and SWID). This standard became the technical benchmark adopted across federal procurement and international regulations.
 
 # Related concepts
 - [Timeline Index](index.md)
+- [NTIA Minimum Elements Requirements](../requirements/united-states/ntia-minimum-elements.md)
+- [Executive Order 14028 Signing](eo-14028-signing.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^ntia-sbom-elements]: National Telecommunications and Information Administration, The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf

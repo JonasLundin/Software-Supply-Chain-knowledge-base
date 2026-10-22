@@ -1,47 +1,41 @@
 ---
 type: Jurisdiction
-title: 'Jurisdiction: United Kingdom'
-description: UK Department for Science, Innovation and Technology (DSIT) and NCSC
-  software supply chain governance and Code of Practice.
+title: United Kingdom Software Supply Chain Framework
+description: Policy initiatives and guidance led by DSIT and NCSC promoting secure
+  software development and supply chain transparency.
 category: jurisdiction
 tags:
-- supply-chain
 - jurisdiction
 - uk
 - ncsc
-- dsit
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: ntia-sbom-elements
-  resource: https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
-  title: The Minimum Elements For a Software Bill of Materials (SBOM)
-  author: National Telecommunications and Information Administration (NTIA)
-  last_modified: '2021-07-12T00:00:00Z'
+- id: uk-software-security-code-of-practice
+  resource: https://www.gov.uk/government/publications/software-security-code-of-practice
+  title: Software Security Code of Practice
+  author: Department for Science, Innovation and Technology (DSIT) and NCSC
+  last_modified: '2025-05-07T00:00:00Z'
 x-software-supply-chain:
-  jurisdiction: United Kingdom
+  jurisdiction: GB
   authority_level: guidance
   instrument_status: in_force
-  provision: UK DSIT Code of Practice for Software Vendors
   checked_at: '2026-09-27T00:00:00Z'
 ---
 
 # Summary
 
-The **United Kingdom**, led by the **Department for Science, Innovation and Technology (DSIT)** and the **National Cyber Security Centre (NCSC)**, has established comprehensive voluntary and procurement frameworks for software supply chain integrity[^ntia-sbom-elements].
+The **United Kingdom** software supply chain framework is steered by the Department for Science, Innovation and Technology (DSIT) and the National Cyber Security Centre (NCSC)[^uk-software-security-code-of-practice].
 
 # Key Policy Initiatives
-
-- **Code of Practice for Software Vendors**: Sets baseline expectations for software creators selling in the UK, covering secure development, component inventory maintenance, and transparent vulnerability reporting.
-- **NCSC Supply Chain Principles**: 12 foundational principles guiding commercial and defense organizations in managing third-party cyber risk.
-- **Alignment with International Standards**: Direct alignment with ISO/IEC 5962, SLSA, and the US-UK bilateral cyber cooperation agreements.
+- **Software Security Code of Practice**: Voluntary government code of practice published on May 7, 2025, detailing security baseline recommendations for software vendors.
+- **NCSC Supply Chain Principles**: National guidance outlining twelve principles across risk understanding, control establishment, verification, and continuous improvement.
 
 # Related concepts
-- [United States](united-states.md)
-- [European Union](european-union.md)
-- [SLSA v1.0 Framework](../standards/attestation-and-provenance/slsa-1-0.md)
+- [UK Software Security Code of Practice](../guidance/ncsc/uk-software-security-code-of-practice.md)
+- [NCSC Supply Chain Principles](../guidance/ncsc/ncsc-supply-chain-principles.md)
 
-[^ntia-sbom-elements]: National Telecommunications and Information Administration (NTIA), The Minimum Elements For a Software Bill of Materials (SBOM), https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
+[^uk-software-security-code-of-practice]: Department for Science, Innovation and Technology (DSIT) and NCSC, Software Security Code of Practice, https://www.gov.uk/government/publications/software-security-code-of-practice

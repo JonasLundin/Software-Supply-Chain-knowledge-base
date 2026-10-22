@@ -1,26 +1,27 @@
 ---
 type: Procedure
 title: Cryptographic Signing and Integrity Verification of SBOMs
-description: Operational procedure for cryptographically binding Software Bills of Materials to release artifacts and verifying attestation signatures prior to deployment.
+description: Operational procedure for cryptographically binding Software Bills of
+  Materials to release artifacts and verifying attestation signatures prior to deployment.
 category: procedure
 tags:
-  - sbom
-  - sigstore
-  - cosign
-  - in-toto
-  - signing
-  - procedure
+- sbom
+- sigstore
+- cosign
+- in-toto
+- signing
+- procedure
 status: draft
 generated:
   by: agent:kb-researcher-writer
   at: '2026-09-27T00:00:00Z'
 stale_after: '2027-12-31T00:00:00Z'
 sources:
-  - id: slsa-framework
-    resource: https://slsa.dev/spec/v1.0/
-    title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
-    author: OpenSSF SLSA Working Group
-    last_modified: '2023-04-18T00:00:00Z'
+- id: slsa-framework
+  resource: https://slsa.dev/
+  title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
+  author: OpenSSF SLSA Working Group
+  last_modified: '2023-04-18T00:00:00Z'
 x-software-supply-chain:
   jurisdiction: International
   authority_level: standard
@@ -173,4 +174,4 @@ spec:
 - [Build Platform Role](../roles/build-platform.md)
 - [Software Producer Role](../roles/software-producer.md)
 
-[^slsa-framework]: OpenSSF SLSA Working Group, Supply chain Levels for Software Artifacts (SLSA) Specification v1.0, https://slsa.dev/spec/v1.0/
+[^slsa-framework]: OpenSSF SLSA Working Group, Supply chain Levels for Software Artifacts (SLSA) Specification v1.0, https://slsa.dev/

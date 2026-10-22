@@ -1,6 +1,6 @@
 ---
 type: Procedure
-title: 'Procedure: Dependency Due Diligence and Governance'
+title: "Procedure: Dependency Due Diligence and Governance"
 description: Continuous auditing of open source components for license compliance,
   malicious code injection, and abandoned maintenance.
 category: procedure

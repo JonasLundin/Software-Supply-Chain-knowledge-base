@@ -1,7 +1,3 @@
-# OpenSSF
+# OpenSSF Guidance
 
-Guides, SLSA documentation, Scorecard documentation.
-
-## Concepts
-
-- [OpenSSF Scorecard and Best Practices Guidelines](scorecard-and-best-practices.md) — Open Source Security Foundation automated tooling and badge criteria for open-source package security health.
+- [OpenSSF Best Practices and Scorecard](scorecard-and-best-practices.md): Practical steps for open source security.

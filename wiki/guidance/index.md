@@ -1,12 +1,12 @@
-# Guidance
+# Guidance and Best Practices
 
-Official and community guidance.
+Advisory publications and good practice guides from authorities and industry consortia.
 
-## Sections
+## Subsections
 
-- [BSI](bsi/index.md) — TR-03183 explanatory material.
-- [CISA](cisa/index.md) — SBOM guidance series, VEX documents, SBOM-a-rama outputs.
-- [ENISA](enisa/index.md) — Supply-chain security reports and CRA-related guidance.
-- [National cyber security centres](ncsc/index.md) — NCSC-UK, NCSC-NL and other national guidance.
-- [NTIA](ntia/index.md) — Multistakeholder process documents and the 2021 minimum elements.
-- [OpenSSF](openssf/index.md) — Guides, SLSA documentation, Scorecard documentation.
+- [BSI](bsi/index.md): German Federal Office for Information Security guidance.
+- [CISA](cisa/index.md): US Cybersecurity and Infrastructure Security Agency guidance.
+- [ENISA](enisa/index.md): European Union Agency for Cybersecurity guidance.
+- [NCSC](ncsc/index.md): UK National Cyber Security Centre guidance.
+- [NTIA](ntia/index.md): US National Telecommunications and Information Administration guidance.
+- [OpenSSF](openssf/index.md): Open Source Security Foundation best practices.

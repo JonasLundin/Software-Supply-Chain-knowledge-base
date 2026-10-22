@@ -1,10 +1,13 @@
-# Timeline
+# Software Supply Chain Timeline
 
-Executive Order 14028, NTIA 2021, SPDX as ISO/IEC 5962, CycloneDX as ECMA-424, SLSA 1.0 and 1.2, SPDX 3.0, CISA 2026 minimum elements, CRA dates.
+Chronological milestones in software supply chain standards and regulation.
 
-## Concepts
+## Milestones
 
-- [CRA Full Application](cra-application-2027.md) — Full application of Cyber Resilience Act manufacturer and SBOM inventory obligations in 2027.
-- [NTIA Minimum Elements Publication](ntia-minimum-elements-publication.md) — Publication of the baseline data fields required for software bills of materials on 12 July 2021.
-- [SPDX International Standard Adoption](spdx-iso-adoption.md) — Adoption of SPDX 2.2 as international standard ISO/IEC 5962:2021 in September 2021.
-- [Executive Order 14028 Signing](eo-14028-signing.md) — US Presidential directive initiating federal SBOM and software supply chain security standards on 12 May 2021.
+- [Executive Order 14028 Signed](eo-14028-signing.md) (May 12, 2021)
+- [NTIA Minimum Elements Published](ntia-minimum-elements-publication.md) (July 12, 2021)
+- [SPDX Adopted as ISO/IEC 5962:2021](spdx-iso-adoption.md) (September 9, 2021)
+- [SLSA v1.0 Released](slsa-1-0-release.md) (April 18, 2023)
+- [Ecma Ratifies ECMA-424 (CycloneDX)](ecma-424-cyclonedx.md) (June 2024 / December 2025)
+- [CISA 2026 Minimum Elements Published](cisa-2026-minimum-elements.md) (July 29, 2026)
+- [CRA Entry into Application](cra-application-2027.md) (December 11, 2027)

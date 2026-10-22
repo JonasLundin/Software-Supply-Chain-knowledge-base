@@ -1,6 +1,6 @@
 ---
 type: Role
-title: 'Role: Package Registry'
+title: "Role: Package Registry"
 description: Central repository hosting, indexing, and serving software packages,
   containers, signatures, and provenance tokens.
 category: role
@@ -13,20 +13,15 @@ tags:
 - oci
 status: draft
 generated:
-  by: agent:kb-researcher-writer
+  by: manual-curation
   at: '2026-09-27T00:00:00Z'
-stale_after: '2027-12-31T00:00:00Z'
+stale_after: '2028-12-31T00:00:00Z'
 sources:
-- id: slsa-framework
-  resource: https://slsa.dev/spec/v1.0/
-  title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.0
+- id: slsa-spec-v1-2
+  resource: https://slsa.dev/spec/v1.2/
+  title: Supply chain Levels for Software Artifacts (SLSA) Specification v1.2
   author: OpenSSF SLSA Working Group
-  last_modified: '2023-04-18T00:00:00Z'
-- id: spdx-iso-5962
-  resource: https://spdx.dev/specifications/
-  title: Software Package Data Exchange (SPDX) Specification (ISO/IEC 5962:2021)
-  author: Linux Foundation / ISO/IEC JTC 1
-  last_modified: '2021-09-01T00:00:00Z'
+  last_modified: '2024-09-01T00:00:00Z'
 x-software-supply-chain:
   jurisdiction: International
   authority_level: guidance
@@ -37,7 +32,7 @@ x-software-supply-chain:
 
 # Summary
 
-A **Package Registry** is a centralized or distributed repository service (e.g., npm, PyPI, Maven Central, crates.io, Docker Hub, OCI registries) that ingests, indexes, validates, and distributes compiled packages or container images to downstream consumers[^slsa-framework].
+A **Package Registry** is a centralized or distributed repository service (e.g., npm, PyPI, Maven Central, crates.io, Docker Hub, OCI registries) that ingests, indexes, validates, and distributes compiled packages or container images to downstream consumers[^slsa-spec-v1-2].
 
 Registries operate at the vital intersection of open-source distribution and enterprise supply-chain consumption.
 
@@ -51,8 +46,7 @@ To protect against account takeovers, dependency confusion, and malware injectio
 
 # Related concepts
 - [Software Producer](software-producer.md)
-- [Package URL (purl)](../glossary/package-url.md)
+- [Package URL (purl)](../standards/identifiers/package-url.md)
 - [Sigstore Ecosystem](../standards/attestation-and-provenance/sigstore.md)
 
-[^slsa-framework]: OpenSSF SLSA Working Group, Supply chain Levels for Software Artifacts (SLSA) Specification v1.0, https://slsa.dev/spec/v1.0/
-[^spdx-iso-5962]: Linux Foundation / ISO/IEC JTC 1, Software Package Data Exchange (SPDX) Specification (ISO/IEC 5962:2021), https://spdx.dev/specifications/
+[^slsa-spec-v1-2]: OpenSSF SLSA Working Group, Supply chain Levels for Software Artifacts (SLSA) Specification v1.2, https://slsa.dev/spec/v1.2/
